@@ -1,0 +1,61 @@
+header
+  .sidenav
+    width: 20%
+    min-width: 170px
+    background-color: rgba(0, 0, 0, .8)
+    height: 100%
+    top: 0px
+    overflow: auto
+    float: left
+    z-index: 10
+    position: fixed
+    left: 0px
+    min-height: 400px
+
+    .logo
+      display: block
+      clear: both
+      text-align: center
+      img
+        width: 80%
+        max-width: 250px
+
+    nav
+      padding-top: 30px
+      display: block
+      text-transform: uppercase
+      text-align: right
+      ul
+        padding-right: 25px
+        li
+          list-style-type: none
+          line-height: 3em
+          a
+            color: #ccc
+            font-size: 1.5em
+            font-weight: 300
+            &:hover
+              color: #ffda78
+
+  footer
+    display: inline-block
+    clear: both
+    position:  absolute
+    bottom: 15px
+    z-index: 15
+    padding: 0 30px
+    text-align: center
+    color: #ccc
+    .copyright
+      letter-spacing: 0.11em
+      font-size: 0.6em
+      font-family: 'Raleway', sans-serif
+      text-transform: uppercase
+      text-align: center
+      position:absolute
+      padding: 40px 0px
+    .footer-icons
+      [class^="icon-"]
+        display: inline-block
+        font-size: 1.5em
+        letter-spacing: 1.5em
