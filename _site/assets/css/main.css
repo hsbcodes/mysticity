@@ -680,7 +680,9 @@ header footer {
   float: right;
   width: 80%;
   text-align: center;
-  background-color: rgba(42, 57, 69, 0.9); }
+  background-color: rgba(42, 57, 69, 0.9);
+  margin: 0 0 20% 0;
+  padding-bottom: 10%; }
   #music .page-title {
     padding: 25px 0 50px 0; }
   #music .album {
@@ -692,6 +694,32 @@ header footer {
     color: white;
     font-weight: 900; }
   #music h2 {
+    font-size: 1.5em;
+    line-height: .02em;
+    color: white;
+    font-weight: 300; }
+
+#band {
+  float: right;
+  width: 80%;
+  text-align: center;
+  background-color: rgba(42, 57, 69, 0.9);
+  margin: 20% 0;
+  padding-bottom: 10%; }
+  #band .page-title {
+    padding: 25px 0 50px 0; }
+  #band .member {
+    display: inline-block;
+    padding: 10px; }
+    #band .member h4 {
+      color: #eeeeee;
+      font-weight: 400; }
+  #band h1 {
+    font-size: 3em;
+    line-height: .7em;
+    color: white;
+    font-weight: 900; }
+  #band h2 {
     font-size: 1.5em;
     line-height: .02em;
     color: white;
