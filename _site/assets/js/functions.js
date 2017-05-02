@@ -51,6 +51,6 @@ function smoothScroll (duration) {
 				scrollTop: target.offset().top
 
 			}, duration);
-		} 
+		}
 	});
 }
