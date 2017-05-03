@@ -1,0 +1,46 @@
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Mysticity
+email: email@.email.com
+description: Mysticity @tessilk is an Armenian rock band since 1983.
+
+#MENU ITEM LIST
+menu:
+- {name: Home, url: '#splash'}
+- {name: Music, url: '#music'}
+- {name: Band, url: '#band'}
+- {name: Gallery, url: '#gallery'}
+- {name: Contact, url: '#contact'}
+
+#BAND LIST
+band:
+- {name: K.C. Melekyan, image: 'chrismelekyan.jpg'}
+- {name: Doogie White, image: 'doogie.jpg'}
+- {name: John Montgomery, image: 'john.jpg'}
+- {name: Steve, image: 'steve.jpg'}
+- {name: Bobby Rondinelli, image: 'bobby.jpg'} 
+
+#GALLERY LIST
+gallery:
+- {name:  , thumb: 'band01.jpg'}
+- {name:  , thumb: 'band02.jpg'}
+- {name:  , thumb: 'band03.jpg'}
+- {name:  , thumb: 'band04.jpg'}
+- {name:  , thumb: 'band05.jpg'}
+- {name:  , thumb: 'band06.jpg'}
+- {name:  , thumb: 'band07.jpg'}
+- {name:  , thumb: 'band08.jpg'}
+- {name:  , thumb: 'band09.jpg'}
+- {name:  , thumb: 'band10.jpg'}
+- {name:  , thumb: 'band11.jpg'}
+- {name:  , thumb: 'band12.jpg'}
+- {name:  , thumb: 'band13.jpg'}
+- {name:  , thumb: 'band14.jpg'}
+
+
+#Change the site default images and content here!
+logo: 'tessilck_logo.png'

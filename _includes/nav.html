@@ -1,14 +1,14 @@
 <header>
 
   <div class="sidenav">
-    <div class="logo"><a href="index.html"><img src="assets/img/tessilck_logo.png" alt="Tessilk"></a></div>
+    <div class="logo"><a href="index.html"><img src="assets/img/{{site.data.sitecon.logo}}" alt="Tessilk"></a></div>
     <nav>
       <ul>
-        <li><a href="#splash">Home</a></li>
-        <li><a href="#music">Music</a></li>
-        <li><a href="#band">Band</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
+
+        {% for item in site.data.sitecon.menu %}
+          <li><a href="{{ item.url }}"> {{ item.name }} </a></li>
+        {% endfor %}
+
       </ul>
 
     </nav>
