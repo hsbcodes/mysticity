@@ -10,7 +10,7 @@ description: Mysticity @tessilk is an Armenian rock band since 1983.
 
 #MENU ITEM LIST
 menu:
-- {name: Home, url: '#splash'}
+- {name: Home, url: '#landing'}
 - {name: Music, url: '#music'}
 - {name: Band, url: '#band'}
 - {name: Gallery, url: '#gallery'}

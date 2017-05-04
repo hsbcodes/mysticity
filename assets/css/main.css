@@ -674,10 +674,10 @@ header footer {
     -o-align-items: flex-end;
     align-items: flex-end;
     -ms-flex-align: end;
-    width: 20%;
-    padding: 0 40%; }
+    width: 10%;
+    padding: 0 45%; }
     header footer .footer-icons [class^="icon-"] {
-      letter-spacing: 1.2em;
+      letter-spacing: .5em;
       font-size: 1.5em; }
   header footer .copyright {
     -webkit-align-self: flex-end;
@@ -694,26 +694,27 @@ header footer {
   padding: 0;
   margin: 0; }
 
-#splash {
+#landing {
   float: right;
   width: 80%;
-  margin-top: 20%;
-  margin-bottom: 20%;
   height: 100%;
   position: relative;
   min-height: 400px;
-  text-align: center;
-  top: 0; }
-  #splash h1 {
-    max-width: 60%;
-    margin: auto;
-    max-height: 40%;
-    text-align: center;
-    padding-bottom: 20px;
-    margin-bottom: -40px;
-    background-color: rgba(0, 0, 0, 0.8); }
-    #splash h1 img {
-      width: 100%; }
+  text-align: center; }
+  #landing .splash {
+    width: 100%;
+    display: block;
+    margin: 40% 0; }
+    #landing .splash h1 {
+      max-width: 60%;
+      margin: auto;
+      max-height: 40%;
+      text-align: center;
+      padding-bottom: 20px;
+      margin-bottom: -40px;
+      background-color: rgba(0, 0, 0, 0.8); }
+      #landing .splash h1 img {
+        width: 100%; }
 
 #music .album {
   display: inline-block;
