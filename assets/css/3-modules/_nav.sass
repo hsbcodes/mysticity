@@ -38,24 +38,28 @@ header
               color: #ffda78
 
   footer
-    display: inline-block
-    clear: both
-    position:  absolute
-    bottom: 15px
-    z-index: 15
-    padding: 0 30px
-    text-align: center
+    display: block
+    height: auto
     color: #ccc
+    position: fixed
+    bottom: 30px
+    width: 20%
+    .footer-icons
+      height: 200px
+      +display(flex)
+      +align-items(flex-end)
+      width: 20%
+      padding: 0 40%
+
+      [class^="icon-"]
+        letter-spacing: 1.2em
+        font-size: 1.5em
+
+
     .copyright
+      +align-self(flex-end)
       letter-spacing: 0.11em
       font-size: 0.6em
       font-family: 'Raleway', sans-serif
       text-transform: uppercase
       text-align: center
-      position:absolute
-      padding: 40px 0px
-    .footer-icons
-      [class^="icon-"]
-        display: inline-block
-        font-size: 1.5em
-        letter-spacing: 1.5em
