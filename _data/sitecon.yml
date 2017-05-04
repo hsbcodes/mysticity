@@ -16,30 +16,35 @@ menu:
 - {name: Gallery, url: '#gallery'}
 - {name: Contact, url: '#contact'}
 
+#MUSIC LIST
+music:
+- {album: The Ambasadors of the Hidden Sun, cover: 'cover01.jpg'}
+- {album: Single The Ambasadors of the Hidden Sun, cover: 'cover02.jpg'}
+
 #BAND LIST
 band:
-- {name: K.C. Melekyan, image: 'chrismelekyan.jpg'}
-- {name: Doogie White, image: 'doogie.jpg'}
-- {name: John Montgomery, image: 'john.jpg'}
-- {name: Steve, image: 'steve.jpg'}
-- {name: Bobby Rondinelli, image: 'bobby.jpg'} 
+- {member: K.C. Melekyan,    image: 'chrismelekyan.jpg'}
+- {member: Doogie White,     image: 'doogie.jpg'}
+- {member: John Montgomery,  image: 'john.jpg'}
+- {member: Steve,            image: 'steve.jpg'}
+- {member: Bobby Rondinelli, image: 'bobby.jpg'}
 
 #GALLERY LIST
 gallery:
-- {name:  , thumb: 'band01.jpg'}
-- {name:  , thumb: 'band02.jpg'}
-- {name:  , thumb: 'band03.jpg'}
-- {name:  , thumb: 'band04.jpg'}
-- {name:  , thumb: 'band05.jpg'}
-- {name:  , thumb: 'band06.jpg'}
-- {name:  , thumb: 'band07.jpg'}
-- {name:  , thumb: 'band08.jpg'}
-- {name:  , thumb: 'band09.jpg'}
-- {name:  , thumb: 'band10.jpg'}
-- {name:  , thumb: 'band11.jpg'}
-- {name:  , thumb: 'band12.jpg'}
-- {name:  , thumb: 'band13.jpg'}
-- {name:  , thumb: 'band14.jpg'}
+- {thumb: 'band01.jpg'}
+- {thumb: 'band02.jpg'}
+- {thumb: 'band03.jpg'}
+- {thumb: 'band04.jpg'}
+- {thumb: 'band05.jpg'}
+- {thumb: 'band06.jpg'}
+- {thumb: 'band07.jpg'}
+- {thumb: 'band08.jpg'}
+- {thumb: 'band09.jpg'}
+- {thumb: 'band10.jpg'}
+- {thumb: 'band11.jpg'}
+- {thumb: 'band12.jpg'}
+- {thumb: 'band13.jpg'}
+- {thumb: 'band14.jpg'}
 
 
 #Change the site default images and content here!

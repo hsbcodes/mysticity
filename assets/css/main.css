@@ -8,6 +8,16 @@
   padding-bottom: 10%; }
   #music .page-title, #band .page-title, #gallery .page-title, #contact .page-title {
     padding: 25px 0 50px 0; }
+    #music .page-title h1, #band .page-title h1, #gallery .page-title h1, #contact .page-title h1 {
+      font-size: 3em;
+      line-height: .7em;
+      color: white;
+      font-weight: 900; }
+    #music .page-title h2, #band .page-title h2, #gallery .page-title h2, #contact .page-title h2 {
+      font-size: 1.5em;
+      line-height: .02em;
+      color: white;
+      font-weight: 300; }
 
 @font-face {
   font-family: 'Raleway';
@@ -689,18 +699,6 @@ header footer {
   display: inline-block;
   padding: 10px; }
 
-#music h1 {
-  font-size: 3em;
-  line-height: .7em;
-  color: white;
-  font-weight: 900; }
-
-#music h2 {
-  font-size: 1.5em;
-  line-height: .02em;
-  color: white;
-  font-weight: 300; }
-
 #band .member {
   display: inline-block;
   padding: 10px; }
@@ -708,63 +706,137 @@ header footer {
     color: #eeeeee;
     font-weight: 400; }
 
-#band h1 {
-  font-size: 3em;
-  line-height: .7em;
-  color: white;
-  font-weight: 900; }
-
-#band h2 {
-  font-size: 1.5em;
-  line-height: .02em;
-  color: white;
-  font-weight: 300; }
-
-#gallery .member {
-  display: inline-block;
-  padding: 10px; }
-  #gallery .member h4 {
-    color: #eeeeee;
-    font-weight: 400; }
-
-#gallery h1 {
-  font-size: 3em;
-  line-height: .7em;
-  color: white;
-  font-weight: 900; }
-
-#gallery h2 {
-  font-size: 1.5em;
-  line-height: .02em;
-  color: white;
-  font-weight: 300; }
+#band .band-container {
+  max-width: 960px;
+  margin: 0px auto;
+  padding-bottom: 100px; }
+  #band .band-container::after {
+    clear: both;
+    content: "";
+    display: table; }
+  #band .band-container .band-unit {
+    display: block;
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin: 10px;
+    position: relative;
+    padding-top: 0%;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    #band .band-container .band-unit:hover {
+      -webkit-transform: scale(0.97);
+      -ms-transform: scale(0.97);
+      transform: scale(0.97); }
+    @media screen and (max-width: 760px) {
+      #band .band-container .band-unit {
+        width: 150px;
+        height: 150px; } }
+    #band .band-container .band-unit .band-overlay {
+      position: absolute;
+      top: 0%;
+      right: 0px;
+      left: 0px;
+      height: 100%;
+      background: rgba(42, 57, 69, 0.7);
+      text-align: center;
+      opacity: 0;
+      -webkit-transition: all 0.15s ease-out 0s;
+      -moz-transition: all 0.15s ease-out 0s;
+      transition: all 0.15s ease-out 0s;
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+      box-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      -ms-align-items: center;
+      -o-align-items: center;
+      align-items: center;
+      -ms-flex-align: center;
+      -webkit-box-pack: distribute;
+      -moz-box-pack: distribute;
+      box-pack: distribute;
+      -webkit-justify-content: space-around;
+      -moz-justify-content: space-around;
+      -ms-justify-content: space-around;
+      -o-justify-content: space-around;
+      justify-content: space-around;
+      -ms-flex-pack: distribute; }
+      #band .band-container .band-unit .band-overlay strong {
+        display: block;
+        color: white;
+        font-weight: 400;
+        padding: 20px;
+        font-size: 15px;
+        line-height: 1.2em;
+        -webkit-transition: all 0.15s ease-out 0s;
+        -moz-transition: all 0.15s ease-out 0s;
+        transition: all 0.15s ease-out 0s; }
+    #band .band-container .band-unit:hover .band-overlay {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 1; }
+      #band .band-container .band-unit:hover .band-overlay strong {
+        font-size: 25px; }
 
 #gallery .thumb-container {
   max-width: 960px;
   margin: 0px auto;
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  overflow: hidden; }
   #gallery .thumb-container::after {
     clear: both;
     content: "";
     display: table; }
   #gallery .thumb-container .thumb-unit {
     display: block;
-    width: 25%;
+    width: 24%;
     float: left;
     position: relative;
     padding-top: 16%;
     overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover; }
+    #gallery .thumb-container .thumb-unit:hover {
+      -webkit-transform: scale(0.97);
+      -ms-transform: scale(0.97);
+      transform: scale(0.97); }
+    @media screen and (max-width: 760px) {
+      #gallery .thumb-container .thumb-unit {
+        width: 50%;
+        padding-top: 26%; } }
     #gallery .thumb-container .thumb-unit .thumb-overlay {
       position: absolute;
-      top: 100%;
+      top: 0%;
       right: 0px;
       left: 0px;
       height: 100%;
-      background: rgba(161, 114, 76, 0.9);
+      background: rgba(42, 57, 69, 0.5);
       text-align: center;
+      opacity: 0;
       -webkit-transition: all 0.15s ease-out 0s;
       -moz-transition: all 0.15s ease-out 0s;
       transition: all 0.15s ease-out 0s;
@@ -802,10 +874,11 @@ header footer {
         line-height: 1.2em; }
     #gallery .thumb-container .thumb-unit:hover .thumb-overlay {
       position: absolute;
-      top: 0px;
+      top: 0%;
       right: 0px;
       bottom: 0px;
-      left: 0px; }
+      left: 0px;
+      opacity: 1; }
 
 #contact .member {
   display: inline-block;

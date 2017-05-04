@@ -6,13 +6,20 @@
   </div>
 
 
+  <div class="band-container"
 
-{% for member in site.data.sitecon.band %}
-  <div class="member">
-    <a href="#"><img src="assets/img/{{member.image}}" alt="{{member.name}}"></a>
-    <h4>{{member.name}}</h4>
+    <!-- band members -->
+    {% for mysticity in site.data.sitecon.band %}
+    <div class="member">
+      <a href="" class="band-unit" style="background-image: url(/assets/img/{{mysticity.image}});">
+        <div class="band-overlay">
+          <strong>Read Bio</strong>
+        </div>
+      </a>
+      <h4>{{mysticity.member}}</h4>
+    </div>
+    {% endfor %}
+
   </div>
-  {% endfor %}
-
 
 </div>
