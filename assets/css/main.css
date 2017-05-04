@@ -300,13 +300,13 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-  display: inline-block;
+  display: block;
   height: 38px;
   padding: 0 30px;
   color: #fff;
   text-align: center;
-  font-size: 11px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 38px;
   letter-spacing: .1rem;
   text-transform: uppercase;
@@ -717,7 +717,65 @@ header footer {
 
 #music .album {
   display: inline-block;
-  padding: 10px; }
+  padding: 10px 10px 50px 10px; }
+  #music .album h4 {
+    color: #eeeeee;
+    font-weight: 400; }
+
+#music .music-container {
+  max-width: 960px;
+  margin: 0px auto;
+  padding-bottom: 100px; }
+  #music .music-container::after {
+    clear: both;
+    content: "";
+    display: table; }
+  #music .music-container .music-unit {
+    display: block;
+    width: 400px;
+    height: 400px;
+    float: left;
+    margin: 10px;
+    position: relative;
+    padding-top: 0%;
+    overflow: hidden;
+    font-size: 20px;
+    background-position: center;
+    background-size: cover;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    #music .music-container .music-unit:hover {
+      -webkit-transform: scale(0.97);
+      -ms-transform: scale(0.97);
+      transform: scale(0.97); }
+    #music .music-container .music-unit .music-overlay {
+      position: absolute;
+      top: 0%;
+      right: 0px;
+      left: 0px;
+      height: 100%;
+      background: rgba(42, 57, 69, 0.7);
+      opacity: 0;
+      -webkit-transition: all 0.15s ease-out 0s;
+      -moz-transition: all 0.15s ease-out 0s;
+      transition: all 0.15s ease-out 0s; }
+      #music .music-container .music-unit .music-overlay .buttons {
+        margin-top: 150px; }
+        #music .music-container .music-unit .music-overlay .buttons button {
+          display: block;
+          width: 200px;
+          margin: 20px 100px; }
+    #music .music-container .music-unit:hover .music-overlay {
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 1; }
 
 #band .member {
   display: inline-block;

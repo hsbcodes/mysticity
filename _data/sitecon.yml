@@ -18,8 +18,8 @@ menu:
 
 #MUSIC LIST
 music:
-- {album: The Ambasadors of the Hidden Sun, cover: 'cover01.jpg'}
-- {album: Single The Ambasadors of the Hidden Sun, cover: 'cover02.jpg'}
+- {albumname: The Ambasadors of the Hidden Sun, cover: 'albumcover01.jpg'}
+- {albumname: Single The Ambasadors of the Hidden Sun, cover: 'albumcover01.jpg'}
 
 #BAND LIST
 band:

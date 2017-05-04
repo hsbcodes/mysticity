@@ -4,13 +4,29 @@
     <h2>Albums</h2>
   </div>
 
-  <div class="album">
-    <a href="#"><img src="assets/img/albumcover01.jpg" alt="Ambasadors of the Hidden Sun"></a>
+
+
+  <div class="music-container"
+
+    <!-- music albums -->
+    {% for albums in site.data.sitecon.music %}
+    <div class="album">
+      <a href="" class="music-unit" style="background-image: url(/assets/img/{{albums.cover}});">
+        <div class="music-overlay">
+          <div class="buttons">
+            <button type="button" name="button">Info</button>
+            <button type="button" name="button">Buy Now</button>
+          </div>
+
+        </div>
+      </a>
+      <h4>{{albums.albumname}}</h4>
+    </div>
+    {% endfor %}
+
   </div>
 
-  <div class="album">
-    <a href="#"><img src="assets/img/albumcover01.jpg" alt="Ambasadors of the Hidden Sun"></a>
-  </div>
+
 
 
 </div>
