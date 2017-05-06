@@ -1,32 +1,58 @@
-<div id="music">
+<section id="music" class="section-music">
   <div class="page-title">
     <h1>Music</h1>
     <h2>Albums</h2>
   </div>
 
 
+  <div class="music-full">
 
-  <div class="music-container"
+    <div class="music-wrap">
+      <div class="music-container">
+        {% for allalbums in site.data.sitecon.music %}
+        <div class="album">
+          <a href="" class="music-unit" data-file="{{albums.file}}" style="background-image: url(/assets/img/{{allalbums.cover}});">
+            <div class="music-overlay">
+              <div class="buttons">
+                <button type="button" class="details" name="button">Details</button>
+                <button type="button" class="buynow" name="button">Buy Now</button>
+              </div>
+            </div>
+          </a>
+          <h4>{{allalbums.albumname}}</h4>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
 
-    <!-- music albums -->
-    {% for albums in site.data.sitecon.music %}
-    <div class="album">
-      <a href="" class="music-unit" style="background-image: url(/assets/img/{{albums.cover}});">
-        <div class="music-overlay">
-          <div class="buttons">
-            <button type="button" name="button">Details</button>
-            <button type="button" name="button">Buy Now</button>
+
+    <div class="album-wrap">
+      <div class="album-container">
+
+        
+          <div class="cover-wrap">
+            <div class="album-unit" style="background-image: url(/assets/img/albumcover01.jpg);"></div>
+            <button type="button" class="buynow" name="button">Buy Now</button>
+          </div>
+          <div class="track-unit">
+            <h4>The Ambassadors of the Hidden Sun</h4>
+            <h5>Release Date: 2004</h5>
+
+
+
+            <ol>
+              {% for album1 in site.data.sitecon.album %}
+              <li>{{album1.trackname}}</li>
+              {% endfor %}
+            </ol>
+
           </div>
 
-        </div>
-      </a>
-      <h4>{{albums.albumname}}</h4>
+
+      </div>
     </div>
-    {% endfor %}
+
 
   </div>
 
-
-
-
-</div>
+</section>

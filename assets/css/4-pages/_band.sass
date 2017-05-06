@@ -12,19 +12,7 @@
   float: left
 
 .icon-back
-  display: block
-  float: left
-  margin-left: -20px
-  font-size: 50px
-  color: white
-  cursor: pointer
-  opacity: .5
-  +transition
-  &:hover
-    opacity: 1
-  @media screen and (max-width: 1000px)
-    margin-left: 0px
-
+  @extend %icon-back
 
 #band
   @extend %subpg-layout

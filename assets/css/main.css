@@ -22,6 +22,40 @@
     #music, #band, #gallery, #contact {
       width: 100%; } }
 
+.icon-back {
+  display: block;
+  float: left;
+  margin-left: -20px;
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+  opacity: .5;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s; }
+  .icon-back:hover {
+    opacity: 1; }
+  @media screen and (max-width: 1300px) {
+    .icon-back {
+      margin-left: 0px; } }
+
+.icon-forward {
+  display: block;
+  float: right;
+  margin-right: -20px;
+  font-size: 50px;
+  color: white;
+  cursor: pointer;
+  opacity: .5;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s; }
+  .icon-forward:hover {
+    opacity: 1; }
+  @media screen and (max-width: 1300px) {
+    .icon-forward {
+      margin-right: 0px; } }
+
 @font-face {
   font-family: 'Raleway';
   font-style: normal;
@@ -791,19 +825,38 @@ header footer {
       #landing .splash h1 img {
         width: 100%; }
 
-#music .album {
-  display: inline-block;
-  padding: 10px 10px 50px 10px; }
+.section-music {
+  overflow-x: hidden; }
 
-#music .music-container {
+.music-full {
+  width: 200%;
+  position: relative;
+  left: -100%;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  transition: all 500ms; }
+
+.music-wrap, .album-wrap {
+  width: 50%;
+  float: left; }
+
+#music .music-container, #music .album-container {
   max-width: 960px;
   margin: 0px auto;
-  padding-bottom: 100px; }
-  #music .music-container::after {
+  padding: 0 20px; }
+  #music .music-container::after, #music .album-container::after {
     clear: both;
     content: "";
     display: table; }
-  #music .music-container .music-unit {
+  #music .music-container img, #music .album-container img {
+    max-width: 100%; }
+  #music .music-container .album, #music .album-container .album {
+    display: inline-block;
+    margin: 0px 25px; }
+    @media screen and (max-width: 500px) {
+      #music .music-container .album, #music .album-container .album {
+        margin: 0px 10px; } }
+  #music .music-container .music-unit, #music .album-container .music-unit {
     display: block;
     width: 400px;
     height: 400px;
@@ -813,19 +866,17 @@ header footer {
     padding-top: 0%;
     overflow: hidden;
     font-size: 20px;
-    background-position: center;
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
-    transition: 0.5s;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover; }
-    #music .music-container .music-unit:hover {
+    transition: 0.5s; }
+    #music .music-container .music-unit:hover, #music .album-container .music-unit:hover {
       -webkit-transform: scale(1.03);
       -ms-transform: scale(1.03);
       transform: scale(1.03); }
-    #music .music-container .music-unit .music-overlay {
+    #music .music-container .music-unit .music-overlay, #music .album-container .music-unit .music-overlay {
       position: absolute;
       top: 0%;
       right: 0px;
@@ -836,19 +887,47 @@ header footer {
       -webkit-transition: all 0.15s ease-out 0s;
       -moz-transition: all 0.15s ease-out 0s;
       transition: all 0.15s ease-out 0s; }
-      #music .music-container .music-unit .music-overlay .buttons {
+      #music .music-container .music-unit .music-overlay .buttons, #music .album-container .music-unit .music-overlay .buttons {
         margin-top: 150px; }
-        #music .music-container .music-unit .music-overlay .buttons button {
+        #music .music-container .music-unit .music-overlay .buttons button, #music .album-container .music-unit .music-overlay .buttons button {
           display: block;
           width: 200px;
           margin: 20px 100px; }
-    #music .music-container .music-unit:hover .music-overlay {
+    #music .music-container .music-unit:hover .music-overlay, #music .album-container .music-unit:hover .music-overlay {
       position: absolute;
       top: 0px;
       right: 0px;
       bottom: 0px;
       left: 0px;
       opacity: 1; }
+
+#music .album-unit {
+  display: block;
+  float: left;
+  width: 200px;
+  height: 200px;
+  overflow-x: hidden;
+  margin: 0 40px 20px 20px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#music .buynow {
+  display: block;
+  position: absolute;
+  margin: 220px 0 0 45px; }
+
+#music .track-unit {
+  display: block;
+  width: 60%;
+  text-align: left;
+  width: auto;
+  font-size: 18px;
+  line-height: 1.6em;
+  letter-spacing: .03em; }
+  #music .track-unit ol {
+    display: inline-block;
+    margin-left: 20px; }
 
 .section-bio {
   overflow-x: hidden; }
@@ -864,23 +943,6 @@ header footer {
 .band-wrap, .bio-wrap {
   width: 50%;
   float: left; }
-
-.icon-back {
-  display: block;
-  float: left;
-  margin-left: -20px;
-  font-size: 50px;
-  color: white;
-  cursor: pointer;
-  opacity: .5;
-  -webkit-transition: all 0.15s ease-out 0s;
-  -moz-transition: all 0.15s ease-out 0s;
-  transition: all 0.15s ease-out 0s; }
-  .icon-back:hover {
-    opacity: 1; }
-  @media screen and (max-width: 1000px) {
-    .icon-back {
-      margin-left: 0px; } }
 
 #band .band-container, #band .bio-container {
   max-width: 960px;

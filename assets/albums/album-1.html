@@ -1,0 +1,14 @@
+<div class="album-unit" style="background-image: url(/assets/img/albumcover01.jpg);">
+<button type="button" name="button">Buy Now</button>
+</div>
+
+<div class="track-unit">
+  <h4>The Ambassadors of the Hidden Sun</h4>
+  <h5>Release Date: 2004</h5>
+
+    {% for album1 in site.data.sitecon.music %}
+    <ol>
+      <li>{{album1.trackname}}</li>
+    </ol>
+    {% endfor %}
+</div>

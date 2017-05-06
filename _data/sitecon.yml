@@ -10,16 +10,29 @@ description: Mysticity @tessilk is an Armenian rock band since 1983.
 
 #MENU ITEM LIST
 menu:
-- {name: Home, url: '#landing'}
-- {name: Music, url: '#music'}
-- {name: Band, url: '#band'}
+- {name: Home,    url: '#landing'}
+- {name: Music,   url: '#music'}
+- {name: Band,    url: '#band'}
 - {name: Gallery, url: '#gallery'}
 - {name: Contact, url: '#contact'}
 
 #MUSIC LIST
 music:
-- {albumname: The Ambasadors of the Hidden Sun, cover: 'albumcover01.jpg'}
-- {albumname: Single The Ambasadors of the Hidden Sun, cover: 'albumcover01.jpg'}
+- {albumname: The Ambasadors of the Hidden Sun,        cover: 'albumcover01.jpg', file: 'album-1'}
+- {albumname: Single The Ambasadors of the Hidden Sun, cover: 'albumcover01.jpg', file: 'album-2'}
+album:
+- {trackname: Paxust te Veradartz}
+- {trackname: Revolution}
+- {trackname: Hidden Sun}
+- {trackname: Rain}
+- {trackname: Regret}
+- {trackname: Dad is gone}
+- {trackname: Home Sweet Home}
+- {trackname: W and W/O You}
+- {trackname: Crisis}
+- {trackname: Visions}
+- {trackname: Departure}
+- {trackname: Miragein}
 
 #BAND LIST
 band:
