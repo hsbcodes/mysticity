@@ -759,7 +759,7 @@ header footer {
   bottom: 30px;
   width: 20%; }
   header footer .footer-icons {
-    height: 200px;
+    height: 20px;
     display: -webkit-box;
     display: -moz-box;
     display: box;
@@ -777,7 +777,12 @@ header footer {
     align-items: flex-end;
     -ms-flex-align: end;
     width: 10%;
-    padding: 0 45%; }
+    padding-left: 50%;
+    color: white;
+    cursor: pointer; }
+    header footer .footer-icons a {
+      color: white;
+      cursor: pointer; }
     header footer .footer-icons [class^="icon-"] {
       letter-spacing: .5em;
       font-size: 1.5em; }
@@ -916,6 +921,8 @@ header footer {
   display: block;
   position: absolute;
   margin: 220px 0 0 45px; }
+  #music .buynow:focus {
+    outline: none; }
 
 #music .track-unit {
   display: block;
@@ -924,10 +931,11 @@ header footer {
   width: auto;
   font-size: 18px;
   line-height: 1.6em;
-  letter-spacing: .03em; }
+  letter-spacing: .03em;
+  color: white; }
   #music .track-unit ol {
     display: inline-block;
-    margin-left: 20px; }
+    margin: 10px 0 0 20px; }
 
 .section-bio {
   overflow-x: hidden; }
