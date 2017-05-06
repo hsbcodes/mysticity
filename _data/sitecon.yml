@@ -23,11 +23,11 @@ music:
 
 #BAND LIST
 band:
-- {member: K.C. Melekyan,    image: 'chrismelekyan.jpg'}
-- {member: Doogie White,     image: 'doogie.jpg'}
-- {member: John Montgomery,  image: 'john.jpg'}
-- {member: Steve,            image: 'steve.jpg'}
-- {member: Bobby Rondinelli, image: 'bobby.jpg'}
+- {membername: K.C. Melekyan,    image: 'chrismelekyan.jpg',  file: 'bio-1'}
+- {membername: Doogie White,     image: 'doogie.jpg',         file: 'bio-2'}
+- {membername: John Montgomery,  image: 'john.jpg',           file: 'bio-3'}
+- {membername: Steve,            image: 'steve.jpg',          file: 'bio-4'}
+- {membername: Bobby Rondinelli, image: 'bobby.jpg',          file: 'bio-5'}
 
 #GALLERY LIST
 gallery:

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title></title>
+  <title>Mysticity</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
@@ -46,7 +46,7 @@
         <i class="icon-twitter ion-social-twitter-outline" ></i>
         <i class="icon-facebook ion-social-facebook-outline"></i>
       </div>
-      <div class="copyright">© Tessilk All Rights Reserved</div>
+      <div class="copyright">© Tessilck All Rights Reserved</div>
     </footer>
   </div>
 
@@ -54,10 +54,10 @@
 
 
 
-<div id="landing">
+<section id="landing">
   <div class="splash">
     <h1><img src="assets/img/mysticity_logo.png" alt="Mysticity"></h1>
-    <p class="call-to-action "><a href="#">Play Video</a></p>
+    <a href="#" class="call-to-action">Play Video</a>
   </div>
 
 </div>
@@ -84,7 +84,7 @@
 
 
  </div>
-</div>
+</section>
 
 
 <div id="music">
@@ -103,7 +103,7 @@
       <a href="" class="music-unit" style="background-image: url(/assets/img/albumcover01.jpg);">
         <div class="music-overlay">
           <div class="buttons">
-            <button type="button" name="button">Info</button>
+            <button type="button" name="button">Details</button>
             <button type="button" name="button">Buy Now</button>
           </div>
 
@@ -116,7 +116,7 @@
       <a href="" class="music-unit" style="background-image: url(/assets/img/albumcover01.jpg);">
         <div class="music-overlay">
           <div class="buttons">
-            <button type="button" name="button">Info</button>
+            <button type="button" name="button">Details</button>
             <button type="button" name="button">Buy Now</button>
           </div>
 
@@ -135,69 +135,83 @@
 
 
 
-<div id="band">
+<section id="band" class="section-bio">
   <div class="page-title">
     <h1>Band</h1>
     <h2>Mysticity</h2>
   </div>
 
+  <div class="band-full">
 
-  <div class="band-container"
+    <div class="band-wrap">
+      <div class="band-container">
+        
+        <div class="member">
+          <div class="band-unit" data-file="bio-1" style="background-image: url(/assets/img/chrismelekyan.jpg);">
+            <div class="band-overlay">
+              <strong>Read Bio</strong>
+            </div>
+          </div>
+          <h4>K.C. Melekyan</h4>
+        </div>
+        
+        <div class="member">
+          <div class="band-unit" data-file="bio-2" style="background-image: url(/assets/img/doogie.jpg);">
+            <div class="band-overlay">
+              <strong>Read Bio</strong>
+            </div>
+          </div>
+          <h4>Doogie White</h4>
+        </div>
+        
+        <div class="member">
+          <div class="band-unit" data-file="bio-3" style="background-image: url(/assets/img/john.jpg);">
+            <div class="band-overlay">
+              <strong>Read Bio</strong>
+            </div>
+          </div>
+          <h4>John Montgomery</h4>
+        </div>
+        
+        <div class="member">
+          <div class="band-unit" data-file="bio-4" style="background-image: url(/assets/img/steve.jpg);">
+            <div class="band-overlay">
+              <strong>Read Bio</strong>
+            </div>
+          </div>
+          <h4>Steve</h4>
+        </div>
+        
+        <div class="member">
+          <div class="band-unit" data-file="bio-5" style="background-image: url(/assets/img/bobby.jpg);">
+            <div class="band-overlay">
+              <strong>Read Bio</strong>
+            </div>
+          </div>
+          <h4>Bobby Rondinelli</h4>
+        </div>
+        
+      </div>
+    </div>
 
-    <!-- band members -->
-    
-    <div class="member">
-      <a href="" class="band-unit" style="background-image: url(/assets/img/chrismelekyan.jpg);">
-        <div class="band-overlay">
-          <strong>Read Bio</strong>
-        </div>
-      </a>
-      <h4>K.C. Melekyan</h4>
+    <div class="bio-wrap">
+      <div class="bio-container">
+
+          <i class="icon-back ion-ios-arrow-back" ></i>
+
+          <div class="bio-load"></div>
+
+      </div>
     </div>
-    
-    <div class="member">
-      <a href="" class="band-unit" style="background-image: url(/assets/img/doogie.jpg);">
-        <div class="band-overlay">
-          <strong>Read Bio</strong>
-        </div>
-      </a>
-      <h4>Doogie White</h4>
-    </div>
-    
-    <div class="member">
-      <a href="" class="band-unit" style="background-image: url(/assets/img/john.jpg);">
-        <div class="band-overlay">
-          <strong>Read Bio</strong>
-        </div>
-      </a>
-      <h4>John Montgomery</h4>
-    </div>
-    
-    <div class="member">
-      <a href="" class="band-unit" style="background-image: url(/assets/img/steve.jpg);">
-        <div class="band-overlay">
-          <strong>Read Bio</strong>
-        </div>
-      </a>
-      <h4>Steve</h4>
-    </div>
-    
-    <div class="member">
-      <a href="" class="band-unit" style="background-image: url(/assets/img/bobby.jpg);">
-        <div class="band-overlay">
-          <strong>Read Bio</strong>
-        </div>
-      </a>
-      <h4>Bobby Rondinelli</h4>
-    </div>
-    
+
+
 
   </div>
 
-</div>
+</section>
 
 
-<div id="gallery">
+<section id="gallery">
   <div class="page-title">
     <h1>Gallery</h1>
     <h2>So it goes...</h2>
@@ -206,124 +220,92 @@
   <div class="thumb-container">
     <!-- photos -->
     
-
     <a href="" class="thumb-unit" style="background-image: url(/assets/img/gallery/band01.jpg);">
       <div class="thumb-overlay">
         <strong></strong>
       </div>
     </a>
-
     
-
     <a href="" class="thumb-unit" style="background-image: url(/assets/img/gallery/band02.jpg);">
       <div class="thumb-overlay">
         <strong></strong>
       </div>
     </a>
-
     
-
     <a href="" class="thumb-unit" style="background-image: url(/assets/img/gallery/band03.jpg);">
       <div class="thumb-overlay">
         <strong></strong>
       </div>
     </a>
-
     
-
     <a href="" class="thumb-unit" style="background-image: url(/assets/img/gallery/band04.jpg);">
       <div class="thumb-overlay">
         <strong></strong>
       </div>
     </a>
-
     
-
     <a href="" class="thumb-unit" style="background-image: url(/assets/img/gallery/band05.jpg);">
       <div class="thumb-overlay">
         <strong></strong>
       </div>
     </a>
-
     
-
     <a href="" class="thumb-unit" style="background-image: url(/assets/img/gallery/band06.jpg);">
       <div class="thumb-overlay">
         <strong></strong>
       </div>
     </a>
-
     
-
     <a href="" class="thumb-unit" style="background-image: url(/assets/img/gallery/band07.jpg);">
       <div class="thumb-overlay">
         <strong></strong>
       </div>
     </a>
-
     
-
     <a href="" class="thumb-unit" style="background-image: url(/assets/img/gallery/band08.jpg);">
       <div class="thumb-overlay">
         <strong></strong>
       </div>
     </a>
-
     
-
     <a href="" class="thumb-unit" style="background-image: url(/assets/img/gallery/band09.jpg);">
       <div class="thumb-overlay">
         <strong></strong>
       </div>
     </a>
-
     
-
     <a href="" class="thumb-unit" style="background-image: url(/assets/img/gallery/band10.jpg);">
       <div class="thumb-overlay">
         <strong></strong>
       </div>
     </a>
-
     
-
     <a href="" class="thumb-unit" style="background-image: url(/assets/img/gallery/band11.jpg);">
       <div class="thumb-overlay">
         <strong></strong>
       </div>
     </a>
-
     
-
     <a href="" class="thumb-unit" style="background-image: url(/assets/img/gallery/band12.jpg);">
       <div class="thumb-overlay">
         <strong></strong>
       </div>
     </a>
-
     
-
     <a href="" class="thumb-unit" style="background-image: url(/assets/img/gallery/band13.jpg);">
       <div class="thumb-overlay">
         <strong></strong>
       </div>
     </a>
-
     
-
     <a href="" class="thumb-unit" style="background-image: url(/assets/img/gallery/band14.jpg);">
       <div class="thumb-overlay">
         <strong></strong>
       </div>
     </a>
-
     
-
-
   </div>
-
-
-</div>
+</section>
 
 
 <div id="contact">

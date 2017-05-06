@@ -1,25 +1,39 @@
 
-<div id="band">
+<section id="band" class="section-bio">
   <div class="page-title">
     <h1>Band</h1>
     <h2>Mysticity</h2>
   </div>
 
+  <div class="band-full">
 
-  <div class="band-container"
-
-    <!-- band members -->
-    {% for mysticity in site.data.sitecon.band %}
-    <div class="member">
-      <a href="" class="band-unit" style="background-image: url(/assets/img/{{mysticity.image}});">
-        <div class="band-overlay">
-          <strong>Read Bio</strong>
+    <div class="band-wrap">
+      <div class="band-container">
+        {% for mysticity in site.data.sitecon.band %}
+        <div class="member">
+          <div class="band-unit" data-file="{{mysticity.file}}" style="background-image: url(/assets/img/{{mysticity.image}});">
+            <div class="band-overlay">
+              <strong>Read Bio</strong>
+            </div>
+          </div>
+          <h4>{{mysticity.membername}}</h4>
         </div>
-      </a>
-      <h4>{{mysticity.member}}</h4>
+        {% endfor %}
+      </div>
     </div>
-    {% endfor %}
+
+    <div class="bio-wrap">
+      <div class="bio-container">
+
+          <i class="icon-back ion-ios-arrow-back" ></i>
+
+          <div class="bio-load"></div>
+
+      </div>
+    </div>
+
+
 
   </div>
 
-</div>
+</section>
