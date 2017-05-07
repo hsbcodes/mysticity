@@ -796,9 +796,12 @@ header footer {
   font-size: 24px;
   color: white; }
 
-@media (max-width: 740px) {
+@media (max-width: 750px) {
   main {
     margin-left: 50px; }
+  .modal-container {
+    left: 0%;
+    width: 100%; }
   .video-title {
     font-size: 30px; } }
 
@@ -877,18 +880,22 @@ header footer {
     display: table; }
   #music .music-container img, #music .album-container img {
     max-width: 100%; }
-  #music .music-container .album, #music .album-container .album {
-    display: block;
-    margin: 0px 25px; }
-    @media screen and (max-width: 520px) {
-      #music .music-container .album, #music .album-container .album {
-        margin: 0px 10px; }
-        #music .music-container .album h4, #music .album-container .album h4 {
-          width: 200px;
-          text-align: center;
-          margin: 10px auto 40px auto; } }
-  #music .music-container .music-unit, #music .album-container .music-unit {
-    display: block;
+
+#music .album {
+  display: inline-block;
+  margin: 0px 30px; }
+  #music .album h4 {
+    padding: 10px 0 40px 0; }
+  @media screen and (max-width: 1000px) {
+    #music .album {
+      margin: 0px 10px; }
+      #music .album h4 {
+        width: 200px;
+        font-size: 16px;
+        text-align: center;
+        margin: 0 auto 10px auto; } }
+  #music .album .music-unit {
+    display: inline-block;
     width: 400px;
     height: 400px;
     margin: auto;
@@ -900,15 +907,15 @@ header footer {
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
     transition: 0.5s; }
-    #music .music-container .music-unit:hover, #music .album-container .music-unit:hover {
+    #music .album .music-unit:hover {
       -webkit-transform: scale(1.03);
       -ms-transform: scale(1.03);
       transform: scale(1.03); }
     @media screen and (max-width: 1000px) {
-      #music .music-container .music-unit, #music .album-container .music-unit {
+      #music .album .music-unit {
         width: 250px;
         height: 250px; } }
-    #music .music-container .music-unit .music-overlay, #music .album-container .music-unit .music-overlay {
+    #music .album .music-unit .music-overlay {
       position: absolute;
       top: 0%;
       right: 0px;
@@ -920,19 +927,8 @@ header footer {
       -webkit-transition: all 0.15s ease-out 0s;
       -moz-transition: all 0.15s ease-out 0s;
       transition: all 0.15s ease-out 0s; }
-      #music .music-container .music-unit .music-overlay .buynow-overlay, #music .album-container .music-unit .music-overlay .buynow-overlay {
+      #music .album .music-unit .music-overlay strong {
         display: inline-block;
-        clear: both;
-        width: 33%;
-        margin: 0px 33%; }
-        @media screen and (max-width: 1000px) {
-          #music .music-container .music-unit .music-overlay .buynow-overlay, #music .album-container .music-unit .music-overlay .buynow-overlay {
-            display: inline-block;
-            clear: both;
-            width: 100px;
-            margin: 0px 15% 0px 0px; } }
-      #music .music-container .music-unit .music-overlay strong, #music .album-container .music-unit .music-overlay strong {
-        display: block;
         margin: 45% auto 20% auto;
         cursor: pointer;
         color: white;
@@ -942,14 +938,22 @@ header footer {
         -webkit-transition: all 0.15s ease-out 0s;
         -moz-transition: all 0.15s ease-out 0s;
         transition: all 0.15s ease-out 0s; }
-    #music .music-container .music-unit:hover .music-overlay, #music .album-container .music-unit:hover .music-overlay {
+      #music .album .music-unit .music-overlay .buynow-overlay {
+        display: block;
+        clear: both;
+        width: 150px;
+        margin: 0px 125px; }
+        @media screen and (max-width: 1000px) {
+          #music .album .music-unit .music-overlay .buynow-overlay {
+            margin: 0px 53px; } }
+    #music .album .music-unit:hover .music-overlay {
       position: absolute;
       top: 0px;
       right: 0px;
       bottom: 0px;
       left: 0px;
       opacity: 1; }
-      #music .music-container .music-unit:hover .music-overlay strong, #music .album-container .music-unit:hover .music-overlay strong {
+      #music .album .music-unit:hover .music-overlay strong {
         font-size: 25px; }
 
 #music .cover-wrap {

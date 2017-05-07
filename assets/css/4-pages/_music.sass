@@ -1,18 +1,14 @@
 .section-music
   overflow-x: hidden
-
 .music-full
   width: 200%
   position: relative
   left: 0%
   +transition(all 500ms)
-
-
 .music-wrap, .album-wrap
   width: 50%
   float: left
   padding-bottom: 30px
-
 .icon-back
   @extend %icon-back
   margin-top: -20px
@@ -29,20 +25,21 @@
     +clearfix
     img
       max-width: 100%
-    .album
-      display: block
-      margin: 0px 25px
-      @media screen and (max-width: 520px)
-        margin: 0px 10px
-        h4
-          width: 200px
-          text-align: center
-          margin: 10px auto 40px auto
-
-
+  .album
+    display: inline-block
+    margin: 0px 30px
+    h4
+      padding: 10px 0 40px 0
+    @media screen and (max-width: 1000px)
+      margin: 0px 10px
+      h4
+        width: 200px
+        font-size: 16px
+        text-align: center
+        margin: 0 auto 10px auto
 
     .music-unit
-      display: block
+      display: inline-block
       width: 400px
       height: 400px
       margin: auto
@@ -55,7 +52,6 @@
       +transition(.5s)
       &:hover
         transform: scale(1.03)
-
       @media screen and (max-width: 1000px)
         width: 250px
         height: 250px
@@ -67,18 +63,8 @@
         text-align: center
         opacity: 0
         +transition
-        .buynow-overlay
-          display: inline-block
-          clear: both
-          width: 33%
-          margin: 0px 33%
-          @media screen and (max-width: 1000px)
-            display: inline-block
-            clear: both
-            width: 100px
-            margin: 0px 15% 0px 0px
         strong
-          display: block
+          display: inline-block
           margin: 45% auto 20% auto
           cursor: pointer
           color: white
@@ -86,6 +72,14 @@
           font-size: 15px
           line-height: 1.2em
           +transition
+        .buynow-overlay
+          display: block
+          clear: both
+          width: 150px
+          margin: 0px 125px
+          @media screen and (max-width: 1000px)
+            margin: 0px 53px
+
       &:hover .music-overlay
         +position(absolute, 0px 0px 0px 0px)
         opacity: 1
@@ -110,8 +104,6 @@
         size: cover
     .buynow
       display: inline-block
-
-
 
   .track-unit
     display: block

@@ -12,6 +12,8 @@
   pointer-events:none;
   transition:opacity 0.2s;
 
+
+
   .modal {
     z-index: 1000;
     position:relative;
@@ -21,6 +23,7 @@
     background-color:black;
     margin-top:-220px;
     margin-left:-300px;
+
     //box-shadow:0 0 18px 0 rgba(0, 0, 0, 0.4);
     transition: margin 0.2s;
     .close-icon {
@@ -50,12 +53,18 @@
 
 
 
-@media (max-width: 740px) {
+@media (max-width: 750px) {
   main {
     margin-left: 50px; }
 
+  .modal-container {
+    left:0%;
+    width: 100%;
+  }
   .video-title {
-    font-size: 30px; } }
+    font-size: 30px; }
+
+  }
 
 @media (max-width: 650px) {
   .modal {
@@ -63,7 +72,12 @@
   }
 
   .video-title {
-    font-size: 20px; } }
+    font-size: 20px; }
+
+
+  }
+
+
 
 
 

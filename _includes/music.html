@@ -11,7 +11,7 @@
       <div class="music-container">
         {% for allalbums in site.data.sitecon.music %}
         <div class="album">
-          <div class="music-unit" data-file="{{albums.file}}" style="background-image: url(/assets/img/{{allalbums.cover}});">
+          <div class="music-unit" data-file="{{allalbums.file}}" style="background-image: url(/assets/img/{{allalbums.cover}});">
             <div class="music-overlay">
               <strong>Details</strong>
               <a href="https://www.paypal.com/webapps/hermes?token=74R86736MJ230394V&useraction=commit&mfid=1494058451268_5247e53fdf020" target="_blank" class="buynow-overlay" >
@@ -29,20 +29,7 @@
       <div class="album-container">
           <i class="icon-back ion-ios-arrow-back" ></i>
 
-          <div class="cover-wrap">
-            <div class="album-unit" style="background-image: url(/assets/img/albumcover01.jpg);"></div>
-            <a href="https://www.paypal.com/webapps/hermes?token=74R86736MJ230394V&useraction=commit&mfid=1494058451268_5247e53fdf020" target="_blank">
-              <button type="button" class="buynow" name="button">Buy Now</button> </a>
-          </div>
-          <div class="track-unit">
-            <h4>The Ambassadors of the Hidden Sun</h4>
-            <h5>Release Date: 2004</h5>
-            <ol>
-              {% for album1 in site.data.sitecon.album %}
-              <li>{{album1.trackname}}</li>
-              {% endfor %}
-            </ol>
-          </div>
+          <div class="album-load"></div>
 
 
       </div>
