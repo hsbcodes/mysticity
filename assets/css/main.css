@@ -22,6 +22,18 @@
     #music, #band, #gallery, #contact {
       width: 100%; } }
 
+#band .band-container .band-thumb-unit, #band .bio-container .band-thumb-unit, #band .band-container .band-unit, #band .bio-container .band-unit {
+  display: block;
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 .icon-back {
   display: block;
   float: left;
@@ -431,8 +443,9 @@ input[type="button"] {
   input[type="button"]:hover,
   input[type="button"]:active,
   input[type="button"]:focus {
+    outline: none;
     color: #fff;
-    background-color: rgba(255, 162, 0, 0.8); }
+    background-color: #ffdb7d; }
 
 .cb-slideshow,
 .cb-slideshow:after {
@@ -656,65 +669,6 @@ input[type="button"] {
   width: 100%;
   left: 0; }
 
-.modal-container {
-  z-index: 999;
-  position: fixed;
-  top: 0;
-  left: 20%;
-  width: 80%;
-  height: 100%;
-  background-color: black;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.2s; }
-  .modal-container .modal {
-    z-index: 1000;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    width: 600px;
-    background-color: black;
-    margin-top: -220px;
-    margin-left: -300px;
-    transition: margin 0.2s; }
-    .modal-container .modal .close-icon {
-      position: absolute;
-      top: -40px;
-      right: -40px;
-      height: 30px;
-      width: 30px;
-      color: white;
-      font-size: 30px;
-      text-align: center;
-      cursor: pointer;
-      transition: all 100ms ease-in-out; }
-      .modal-container .modal .close-icon:hover {
-        -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-        transform: scale(1.2); }
-
-.video-title {
-  font-size: 24px;
-  color: white; }
-
-@media (max-width: 740px) {
-  main {
-    margin-left: 50px; }
-  .video-title {
-    font-size: 30px; } }
-
-@media (max-width: 650px) {
-  .modal {
-    width: 350px; }
-  .video-title {
-    font-size: 20px; } }
-
-.modal-open .modal-container {
-  opacity: 1;
-  pointer-events: all; }
-  .modal-open .modal-container .modal {
-    margin-top: -180px; }
-
 header .sidenav {
   width: 20%;
   min-width: 170px;
@@ -801,6 +755,65 @@ header footer {
   header .sidenav {
     display: none; } }
 
+.modal-container {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 20%;
+  width: 80%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s; }
+  .modal-container .modal {
+    z-index: 1000;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 600px;
+    background-color: black;
+    margin-top: -220px;
+    margin-left: -300px;
+    transition: margin 0.2s; }
+    .modal-container .modal .close-icon {
+      position: absolute;
+      top: -40px;
+      right: -40px;
+      height: 30px;
+      width: 30px;
+      color: white;
+      font-size: 30px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 100ms ease-in-out; }
+      .modal-container .modal .close-icon:hover {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2); }
+
+.video-title {
+  font-size: 24px;
+  color: white; }
+
+@media (max-width: 740px) {
+  main {
+    margin-left: 50px; }
+  .video-title {
+    font-size: 30px; } }
+
+@media (max-width: 650px) {
+  .modal {
+    width: 350px; }
+  .video-title {
+    font-size: 20px; } }
+
+.modal-open .modal-container {
+  opacity: 1;
+  pointer-events: all; }
+  .modal-open .modal-container .modal {
+    margin-top: -180px; }
+
 * {
   padding: 0;
   margin: 0; }
@@ -818,7 +831,7 @@ header footer {
   #landing .splash {
     width: 100%;
     display: block;
-    margin: 40% 0; }
+    margin: 20% 0; }
     #landing .splash h1 {
       max-width: 60%;
       margin: auto;
@@ -836,14 +849,23 @@ header footer {
 .music-full {
   width: 200%;
   position: relative;
-  left: -100%;
+  left: 0%;
   -webkit-transition: all 500ms;
   -moz-transition: all 500ms;
   transition: all 500ms; }
 
 .music-wrap, .album-wrap {
   width: 50%;
-  float: left; }
+  float: left;
+  padding-bottom: 30px; }
+
+.icon-back {
+  margin-top: -20px;
+  transition: all 100ms ease-in-out; }
+  .icon-back:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2); }
 
 #music .music-container, #music .album-container {
   max-width: 960px;
@@ -856,21 +878,22 @@ header footer {
   #music .music-container img, #music .album-container img {
     max-width: 100%; }
   #music .music-container .album, #music .album-container .album {
-    display: inline-block;
+    display: block;
     margin: 0px 25px; }
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 520px) {
       #music .music-container .album, #music .album-container .album {
-        margin: 0px 10px; } }
+        margin: 0px 10px; }
+        #music .music-container .album h4, #music .album-container .album h4 {
+          width: 200px;
+          text-align: center;
+          margin: 10px auto 40px auto; } }
   #music .music-container .music-unit, #music .album-container .music-unit {
     display: block;
     width: 400px;
     height: 400px;
-    float: left;
-    margin: 10px;
+    margin: auto;
     position: relative;
-    padding-top: 0%;
     overflow: hidden;
-    font-size: 20px;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -881,6 +904,10 @@ header footer {
       -webkit-transform: scale(1.03);
       -ms-transform: scale(1.03);
       transform: scale(1.03); }
+    @media screen and (max-width: 1000px) {
+      #music .music-container .music-unit, #music .album-container .music-unit {
+        width: 250px;
+        height: 250px; } }
     #music .music-container .music-unit .music-overlay, #music .album-container .music-unit .music-overlay {
       position: absolute;
       top: 0%;
@@ -888,16 +915,33 @@ header footer {
       left: 0px;
       height: 100%;
       background: rgba(42, 57, 69, 0.7);
+      text-align: center;
       opacity: 0;
       -webkit-transition: all 0.15s ease-out 0s;
       -moz-transition: all 0.15s ease-out 0s;
       transition: all 0.15s ease-out 0s; }
-      #music .music-container .music-unit .music-overlay .buttons, #music .album-container .music-unit .music-overlay .buttons {
-        margin-top: 150px; }
-        #music .music-container .music-unit .music-overlay .buttons button, #music .album-container .music-unit .music-overlay .buttons button {
-          display: block;
-          width: 200px;
-          margin: 20px 100px; }
+      #music .music-container .music-unit .music-overlay .buynow-overlay, #music .album-container .music-unit .music-overlay .buynow-overlay {
+        display: inline-block;
+        clear: both;
+        width: 33%;
+        margin: 0px 33%; }
+        @media screen and (max-width: 1000px) {
+          #music .music-container .music-unit .music-overlay .buynow-overlay, #music .album-container .music-unit .music-overlay .buynow-overlay {
+            display: inline-block;
+            clear: both;
+            width: 100px;
+            margin: 0px 15% 0px 0px; } }
+      #music .music-container .music-unit .music-overlay strong, #music .album-container .music-unit .music-overlay strong {
+        display: block;
+        margin: 45% auto 20% auto;
+        cursor: pointer;
+        color: white;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.2em;
+        -webkit-transition: all 0.15s ease-out 0s;
+        -moz-transition: all 0.15s ease-out 0s;
+        transition: all 0.15s ease-out 0s; }
     #music .music-container .music-unit:hover .music-overlay, #music .album-container .music-unit:hover .music-overlay {
       position: absolute;
       top: 0px;
@@ -905,24 +949,25 @@ header footer {
       bottom: 0px;
       left: 0px;
       opacity: 1; }
+      #music .music-container .music-unit:hover .music-overlay strong, #music .album-container .music-unit:hover .music-overlay strong {
+        font-size: 25px; }
 
-#music .album-unit {
+#music .cover-wrap {
   display: block;
   float: left;
-  width: 200px;
-  height: 200px;
-  overflow-x: hidden;
-  margin: 0 40px 20px 20px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-#music .buynow {
-  display: block;
-  position: absolute;
-  margin: 220px 0 0 45px; }
-  #music .buynow:focus {
-    outline: none; }
+  margin: 0 40px 20px 20px; }
+  #music .cover-wrap .album-unit {
+    display: block;
+    clear: right;
+    width: 200px;
+    height: 200px;
+    overflow-x: hidden;
+    margin-bottom: 20px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  #music .cover-wrap .buynow {
+    display: inline-block; }
 
 #music .track-unit {
   display: block;
@@ -936,6 +981,15 @@ header footer {
   #music .track-unit ol {
     display: inline-block;
     margin: 10px 0 0 20px; }
+  @media screen and (max-width: 520px) {
+    #music .track-unit {
+      clear: both;
+      width: 100%; }
+      #music .track-unit h4, #music .track-unit h5 {
+        width: 70%;
+        margin-left: 40px; }
+      #music .track-unit ol {
+        margin-left: 60px; } }
 
 .section-bio {
   overflow-x: hidden; }
@@ -944,17 +998,24 @@ header footer {
   width: 200%;
   position: relative;
   left: 0%;
-  -webkit-transition: all 800ms;
-  -moz-transition: all 800ms;
-  transition: all 800ms; }
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  transition: all 500ms; }
 
 .band-wrap, .bio-wrap {
   width: 50%;
   float: left; }
 
+.icon-back {
+  transition: all 100ms ease-in-out; }
+  .icon-back:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2); }
+
 #band .band-container, #band .bio-container {
   max-width: 960px;
-  margin: 0px auto;
+  margin: 0 auto;
   padding: 0 20px; }
   #band .band-container::after, #band .bio-container::after {
     clear: both;
@@ -965,36 +1026,24 @@ header footer {
   #band .band-container .member, #band .bio-container .member {
     display: inline-block;
     margin: 0px 25px; }
+    #band .band-container .member h4, #band .bio-container .member h4 {
+      padding: 10px 0 30px 0; }
     @media screen and (max-width: 500px) {
       #band .band-container .member, #band .bio-container .member {
         margin: 0px 10px; } }
-  #band .band-container .bio-unit, #band .bio-container .bio-unit {
-    font-size: 18px;
-    line-height: 1.6em;
-    letter-spacing: .03em; }
-  #band .band-container .band-unit, #band .bio-container .band-unit {
-    display: block;
-    width: 250px;
-    height: 250px;
-    margin: 0px auto;
-    position: relative;
-    border-radius: 50%;
-    overflow: hidden;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  #band .band-container .band-thumb-unit, #band .bio-container .band-thumb-unit {
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
     transition: 0.5s; }
-    #band .band-container .band-unit:hover, #band .bio-container .band-unit:hover {
+    #band .band-container .band-thumb-unit:hover, #band .bio-container .band-thumb-unit:hover {
       -webkit-transform: scale(1.07);
       -ms-transform: scale(1.07);
       transform: scale(1.07); }
     @media screen and (max-width: 1000px) {
-      #band .band-container .band-unit, #band .bio-container .band-unit {
+      #band .band-container .band-thumb-unit, #band .bio-container .band-thumb-unit {
         width: 150px;
         height: 150px; } }
-    #band .band-container .band-unit .band-overlay, #band .bio-container .band-unit .band-overlay {
+    #band .band-container .band-thumb-unit .band-overlay, #band .bio-container .band-thumb-unit .band-overlay {
       position: absolute;
       top: 0%;
       right: 0px;
@@ -1032,7 +1081,7 @@ header footer {
       -o-justify-content: space-around;
       justify-content: space-around;
       -ms-flex-pack: distribute; }
-      #band .band-container .band-unit .band-overlay strong, #band .bio-container .band-unit .band-overlay strong {
+      #band .band-container .band-thumb-unit .band-overlay strong, #band .bio-container .band-thumb-unit .band-overlay strong {
         display: block;
         color: white;
         font-weight: 400;
@@ -1042,15 +1091,19 @@ header footer {
         -webkit-transition: all 0.15s ease-out 0s;
         -moz-transition: all 0.15s ease-out 0s;
         transition: all 0.15s ease-out 0s; }
-    #band .band-container .band-unit:hover .band-overlay, #band .bio-container .band-unit:hover .band-overlay {
+    #band .band-container .band-thumb-unit:hover .band-overlay, #band .bio-container .band-thumb-unit:hover .band-overlay {
       position: absolute;
       top: 0px;
       right: 0px;
       bottom: 0px;
       left: 0px;
       opacity: 1; }
-      #band .band-container .band-unit:hover .band-overlay strong, #band .bio-container .band-unit:hover .band-overlay strong {
+      #band .band-container .band-thumb-unit:hover .band-overlay strong, #band .bio-container .band-thumb-unit:hover .band-overlay strong {
         font-size: 25px; }
+  #band .band-container .bio-unit, #band .bio-container .bio-unit {
+    font-size: 18px;
+    line-height: 1.6em;
+    letter-spacing: .03em; }
 
 #gallery .thumb-container {
   max-width: 960px;

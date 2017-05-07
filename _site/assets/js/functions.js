@@ -58,7 +58,7 @@ function smoothScroll(duration) {
 
 //open bio page
 function bandFull(){
-	$('.band-unit').click(function(){
+	$('.band-thumb-unit').click(function(){
 		$('.band-full').css('left','-100%');
 		$('.bio-container').show();
 	});
@@ -71,7 +71,7 @@ function bandFull(){
 //load dinamic bio page
 function bioLoad() {
 	$.ajaxSetup({ cache: false });
-	$('.band-unit').click(function() {
+	$('.band-thumb-unit').click(function() {
 		var $this = $(this),
 			  newFile = $this.data('file'),
 		    spinner = '<div class="loader">Loading...</div>',
@@ -82,7 +82,7 @@ function bioLoad() {
 
 //open album page
 function musicFull(){
-	$('.details').click(function(){
+	$('.music-unit').click(function(){
 		$('.music-full').css('left','-100%');
 		$('.album-container').show();
 	});
@@ -95,7 +95,7 @@ function musicFull(){
 //load dinamic album page
 function albumLoad() {
 	$.ajaxSetup({ cache: false });
-	$('.details').click(function() {
+	$('.music-unit').click(function() {
 		var $this = $(this),
 			  newFile = $this.data('file'),
 		    spinner = '<div class="loader">Loading...</div>',
