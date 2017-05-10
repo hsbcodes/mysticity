@@ -1,0 +1,64 @@
+//   JS Modal Styles
+
+.modal-container, .gallery-container
+  z-index: 999
+  position: fixed
+  top: 0
+  left: 20%
+  width: 80%
+  height: 100%
+  background-color: rgba(0,0,0, 1)
+  opacity: 0
+  pointer-events: none
+  transition: opacity 0.2s
+  .modal, .gallery
+    z-index: 1000
+    position: relative
+    left: 50%
+    top: 50%
+    width: 600px
+    background-color: black
+    margin-top: -220px
+    margin-left: -300px
+
+    //box-shadow:0 0 18px 0 rgba(0, 0, 0, 0.4);
+    transition: margin 0.2s
+    .close-icon
+      @extend %icon-close
+
+.video-title
+  font-size: 24px
+  color: white
+
+
+
+@media screen and (max-width: 760px)
+  main
+    margin-left: 50px
+
+  .modal-container, .gallery-controller
+    left: 0%
+    width: 100%
+
+  .video-title
+    font-size: 30px
+
+
+
+@media screen and (max-width: 650px)
+  .modal, .gallery
+    width: 350px
+
+  .video-title
+    font-size: 20px
+
+
+//Javascript Interactions
+
+.modal-open
+  .modal-container
+    opacity: 1
+    pointer-events: all
+
+    .modal
+      margin-top: -180px

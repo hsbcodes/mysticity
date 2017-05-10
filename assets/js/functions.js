@@ -1,45 +1,10 @@
-// pop up modal
-
-$(document).ready(function () {
-	$('.call-to-action').click(function () {
-		openModal();
-	});
-
-	$('.close-icon').click(function () {
-		closeModal();
-	});
-
-	$(window).keypress(function (event) {
-		if (event.which == 27) {
-			closeModal();
-		}
-	});
-
-	$('.modal-container').click(function (event) {
-		if (this == event.target) {
-			closeModal();
-		}
-	});
-});
-
-function openModal() {
-	$('html').addClass('modal-open');
-}
-
-function closeModal() {
-	$('html').removeClass('modal-open');
-
-}
-
-
-
-
 $(function(){
 	smoothScroll(1000);
 	bandFull();
 	bioLoad();
 	musicFull();
 	albumLoad();
+	galleryStuff();
 });
 
 //smooth scrolling
@@ -102,4 +67,41 @@ function albumLoad() {
 			  newAlbumHTML = '../assets/albums/'+ newFile +'.html';
 			  $('.album-load').html(spinner).load(newAlbumHTML);
 	});
+}
+
+//load dinamic gallery images
+function galleryStuff() {
+	$('.gallery-unit').first().addClass('active-gal');
+	$('.thumb-unit').click(function(){
+		var $this = $(this),
+				$siblings = $this.parent().children(),
+				position = $siblings.index($this);
+		$('.gallery-unit').removeClass('active-gal').eq(position).addClass('active-gal');
+	});
+
+
+	$('.icon-next, .icon-prev').click(function(){
+
+		var $this = $(this),
+		curActiveGal = $('.slide').find('.active-gal'),
+		position = $('.slide').children().index(curActiveGal),
+		galleryNum = $('.gallery-unit').length;
+
+		if($this.hasClass('icon-next')) {
+			if(position < galleryNum -1) {
+				$('.active-gal').removeClass('active-gal').next().addClass('active-gal');
+			} else {
+				$('.gallery-unit').removeClass('active-gal').first().addClass('active-gal');
+			}
+		}else {
+			if (position === 0) {
+				$('.gallery-unit').removeClass('active-gal').last().addClass('active-gal');
+			}else {
+			$('.active-gal').removeClass('active-gal').prev().addClass('active-gal');
+			}
+		}
+
+	});
+
+
 }

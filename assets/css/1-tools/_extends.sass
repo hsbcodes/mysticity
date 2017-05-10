@@ -35,30 +35,97 @@
     repeat: no-repeat
     size: cover
 
+%icon-close
+  display: block
+  position: absolute
+  float: right
+  right: -25%
+  top: -25%
+  font-size: 50px
+  height: 50px
+  width: 50px
+  color: white
+  opacity: .5
+  text-align: center
+  cursor: pointer
+  z-index: 1010
+  transition: transform 100ms ease-in-out
+  &:hover
+    transform: scale(1.2)
+    opacity: 1
+  @media screen and (max-width: 1000px)
+    right: 20%
+    top: -15%
+  @media screen and (max-width: 890px)
+    right: 15%
+    top: -15%
+  @media screen and (max-width: 550px)
+    right: 0%
+    top: -15%
+
 %icon-back
   display: block
+  position: absolute
   float: left
-  margin-left: -20px
-  font-size: 50px
+  height: 30px
+  width: 30px
   color: white
+  font-size: 50px
+  text-align: center
   cursor: pointer
-  opacity: .5
-  +transition
+  z-index: 1010
+  transition: transform 100ms ease-in-out
   &:hover
-    opacity: 1
-  @media screen and (max-width: 1300px)
-    margin-left: 0px
+    transform: scale(1.2)
 
-%icon-forward
+%icon-next
   display: block
+  position: absolute
   float: right
-  margin-right: -20px
-  font-size: 50px
+  top: 40%
+  right: -150px
+  height: 50px
+  width: 50px
   color: white
+  opacity: .8
+  font-size: 60px
+  text-align: center
   cursor: pointer
-  opacity: .5
-  +transition
+  z-index: 1030
+  transition: transform 100ms ease-in-out
+
   &:hover
+    transform: scale(1.2)
     opacity: 1
-  @media screen and (max-width: 1300px)
-    margin-right: 0px
+  @media screen and (max-width: 1000px)
+    right: -100px
+  @media screen and (max-width: 890px)
+    right: -40px
+  @media screen and (max-width: 550px)
+    right: 50px
+
+%icon-prev
+  display: block
+  position: absolute
+  float: left
+  top: 40%
+  left: -150px
+  height: 50px
+  width: 50px
+  color: white
+  opacity: .8
+  font-size: 60px
+  text-align: center
+  cursor: pointer
+  z-index: 1030
+  transition: transform 100ms ease-in-out
+
+  &:hover
+    transform: scale(1.2)
+    opacity: 1
+  @media screen and (max-width: 1000px)
+    left: -100px
+  @media screen and (max-width: 890px)
+    left: -40px
+  @media screen and (max-width: 550px)
+    left: 50px
