@@ -66,11 +66,9 @@
       <div class="close-icon"> <i class="ion-android-close"></i></div>
       <section>
            <article>
-             <div class="flex-video-wrap">
                <div class="flex-video">
                  <iframe src="https://www.youtube.com/embed/l92pxUiQ8Uk?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>
                </div>
-             </div>
            </article>
            <div class="modal-footer">
                <div class="video-title">  </div>
@@ -303,12 +301,29 @@
       </div>
     </div>
     
+
+    
+    <div class="thumb-unit" style="background-image: url(assets/img/gallery/band15.jpg);">
+      <div class="thumb-overlay">
+        <strong><i class="ion-ios-plus-outline"></i></strong>
+      </div>
+    </div>
+    
+    <div class="thumb-unit" style="background-image: url(assets/img/gallery/band16.jpg);">
+      <div class="thumb-overlay">
+        <strong><i class="ion-ios-plus-outline"></i></strong>
+      </div>
+    </div>
+    
+
+
   </div>
 
 
   <!-- JS Modal Structure -->
 
   <div class="gallery-container">
+
     <div class="gallery">
       <div class="close-icon"> <i class="ion-android-close"></i></div>
       <div class="icon-prev"> <i class="ion-ios-arrow-left"></i></div>
@@ -374,12 +389,28 @@
                 <img src="assets/img/gallery/band14.jpg" alt="gal">
               </div>
               
+
+              
+
+                  <div class="gallery-unit">
+                    <iframe src="https://www.youtube.com/embed/l92pxUiQ8Uk?ecver=2" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>
+                  </div>
+
+
+              
+
+                  <div class="gallery-unit">
+                    <iframe src="https://www.youtube.com/embed/5JgCmnNFwj4?ecver=2" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe>
+                  </div>
+
+
+              
+
           </div>
         </article>
       </section>
     </div>
   </div>
-
 
 </section>
 
@@ -390,9 +421,41 @@
     <h2>We'd love to hear from you!</h2>
   </div>
 
-  <div class="slideshow">
-
+  <div class="social-links">
+    <a href="https://www.facebook.com/tessilck/" target="_blank"> <i class="ion-social-facebook-outline"></i></a>
+    <a href="https://www.facebook.com/tessilck/" target="_blank"> <i class="ion-social-twitter-outline"></i></a>
+    <a href="https://www.facebook.com/tessilck/" target="_blank"> <i class="ion-social-apple-outline"></i></a>
+    <a href="https://www.facebook.com/tessilck/" target="_blank"> <i class="ion-social-android-outline"></i></a>
   </div>
+
+  <form id="contact-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left d3" action="contact.php" method="post" novalidate>
+
+    <div class="form-group">
+      <label class="control-label" for="contact-name">What's your name?</label>
+      <div class="controls">
+      <input id="contact-name" name="contactName" placeholder="What's your name?" class="form-control requiredField" type="text" data-error-empty="Please enter your name">
+      <i class="ion-ios-person-outline"></i>
+      </div>
+  
+      <label class="control-label" for="contact-mail">Where can I email you back?</label>
+      <div class=" controls">
+      <input id="contact-mail" name="email" placeholder="Where can I email you back?" class="form-control requiredField" type="email" data-error-empty="Please enter your email" data-error-invalid="Invalid email address">
+      <i class="ion-ios-email-outline"></i>
+      </div>
+    </div><!-- End email input -->
+
+    <div class="form-group">
+      <label class="control-label" for="contact-message">What's on your mind?</label>
+      <div class="controls">
+        <textarea id="contact-message" name="comments"  placeholder="What's on your mind?" class="form-control requiredField" rows="6" data-error-empty="Please enter your message"></textarea>
+        <i class="ion-chatbubble"></i>
+      </div>
+    </div><!-- End textarea -->
+
+    <p><button name="submit" type="submit" class="btn btn-color2 btn-block" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Sent"><i class="fa fa-paper-plane"></i>Send Message</button></p>
+    <input type="hidden" name="submitted" id="submitted" value="true" />
+
+  </form><!-- End contact-form -->
 
 
 </div>

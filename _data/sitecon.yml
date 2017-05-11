@@ -47,6 +47,10 @@ gallery:
 - {thumb: 'band13.jpg'}
 - {thumb: 'band14.jpg'}
 
+youtube:
+- {thumb: 'band15.jpg', link: 'l92pxUiQ8Uk?ecver=2'}
+- {thumb: 'band16.jpg', link: '5JgCmnNFwj4?ecver=2'}
+
 
 #Change the site default images and content here!
 logo: 'tessilck_logo.png'

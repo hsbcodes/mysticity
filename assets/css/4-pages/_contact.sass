@@ -1,11 +1,6 @@
 #contact
   @extend %subpg-layout
-  .member
-    display: inline-block
-    padding: 10px
-    h4
-      color: #eeeeee
-      font-weight: 400
+
   h1
     font-size: 3em
     line-height: .7em
@@ -16,3 +11,40 @@
     line-height: .02em
     color: white
     font-weight: 300
+
+  .social-links
+    +display(flex)
+    +align-items(center)
+    +justify-content(space-around)
+    font-size: 40px
+    padding: 0 30%
+    color: white
+    cursor: pointer
+
+    a
+      display: block
+      color: white
+      cursor: pointer
+      +transition
+
+      &:hover
+        +transform(scale(1.2))
+
+  form
+    max-width: 450px
+    margin: 0 auto 50px
+
+    input, textarea
+      border: 5px solid $yellow
+      width: 100%
+      padding: 15px
+      min-height: 20px
+
+      &:focus
+        outline: none
+        border: 5px solid $darkyellow
+
+    label
+      display: block
+      margin-bottom: 20px
+      span: block

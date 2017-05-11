@@ -40,7 +40,7 @@ function bioLoad() {
 		var $this = $(this),
 			  newFile = $this.data('file'),
 		    spinner = '<div class="loader">Loading...</div>',
-			  newHTML = '../assets/bio/'+ newFile +'.html';
+			  newHTML = 'assets/bio/'+ newFile +'.html';
 			  $('.bio-load').html(spinner).load(newHTML);
 	});
 }
@@ -64,7 +64,7 @@ function albumLoad() {
 		var $this = $(this),
 			  newFile = $this.data('file'),
 		    spinner = '<div class="loader">Loading...</div>',
-			  newAlbumHTML = '../assets/albums/'+ newFile +'.html';
+			  newAlbumHTML = 'assets/albums/'+ newFile +'.html';
 			  $('.album-load').html(spinner).load(newAlbumHTML);
 	});
 }
