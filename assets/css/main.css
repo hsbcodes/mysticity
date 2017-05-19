@@ -7,7 +7,7 @@
   margin: 20% 0;
   padding-bottom: 5%; }
   #music .page-title, #band .page-title, #gallery .page-title, #contact .page-title {
-    padding: 25px 0 50px 0; }
+    padding: 55px 0 50px 0; }
     #music .page-title h1, #band .page-title h1, #gallery .page-title h1, #contact .page-title h1 {
       font-size: 3em;
       line-height: .7em;
@@ -119,10 +119,10 @@
 
 .modal-container .modal .close-icon, .modal-container .gallery .close-icon, .gallery-container .modal .close-icon, .gallery-container .gallery .close-icon {
   display: block;
-  position: absolute;
+  position: fixed;
   float: right;
-  right: -25%;
-  top: -15%;
+  right: 20px;
+  top: 20px;
   font-size: 50px;
   height: 50px;
   width: 50px;
@@ -139,18 +139,6 @@
     -ms-transform: scale(1.2);
     transform: scale(1.2);
     opacity: 1; }
-  @media screen and (max-width: 1000px) {
-    .modal-container .modal .close-icon, .modal-container .gallery .close-icon, .gallery-container .modal .close-icon, .gallery-container .gallery .close-icon {
-      right: 10%;
-      top: -15%; } }
-  @media screen and (max-width: 890px) {
-    .modal-container .modal .close-icon, .modal-container .gallery .close-icon, .gallery-container .modal .close-icon, .gallery-container .gallery .close-icon {
-      right: 0%;
-      top: -15%; } }
-  @media screen and (max-width: 550px) {
-    .modal-container .modal .close-icon, .modal-container .gallery .close-icon, .gallery-container .modal .close-icon, .gallery-container .gallery .close-icon {
-      right: -15%;
-      top: -15%; } }
 
 @font-face {
   font-family: 'Raleway';
@@ -978,7 +966,7 @@ pre {
   border-bottom: 1px solid #555;
   background: #0f1115;
   box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
-  z-index: 99999; }
+  z-index: 999; }
 
 .ap__inner {
   display: -webkit-flex;
@@ -1148,7 +1136,7 @@ pre {
   background: #0f1115;
   border: 1px solid #ccc;
   border-radius: 1px;
-  z-index: 88888; }
+  z-index: 888; }
   .volume::before, .volume::after {
     content: '';
     position: absolute;
@@ -1249,7 +1237,7 @@ pre {
   font-family: inherit;
   font-size: 14px;
   background: #000;
-  z-index: 77777; }
+  z-index: 777; }
 
 @media (max-width: 850px) {
   .pl-container {
@@ -1403,12 +1391,13 @@ pre {
   #landing .splash {
     width: 100%;
     display: block;
-    margin: 20% 0;
-    height: 100%; }
+    margin-top: 300px;
+    height: 400px;
+    top: 50%; }
     #landing .splash h1 {
       max-width: 60%;
       margin: auto;
-      max-height: 40%;
+      max-height: 400px;
       text-align: center;
       padding-bottom: 20px;
       margin-bottom: -40px;
