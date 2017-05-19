@@ -1516,7 +1516,7 @@ pre {
         margin: 0px 125px; }
         @media screen and (max-width: 1200px) {
           #music .album .music-unit .music-overlay .buynow-overlay {
-            margin: 0px 53px; } }
+            margin: 0px 80px; } }
     #music .album .music-unit:hover .music-overlay {
       position: absolute;
       top: 0px;
