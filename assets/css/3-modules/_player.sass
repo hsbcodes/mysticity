@@ -1,0 +1,147 @@
+.player
+  display: block
+  position: fixed
+  z-index: 1500
+  bottom: 335px
+  right: 0
+  width: 80%
+  height: 30px
+
+  nav
+    background-color: darken($bgcolorblue, 10%)
+    padding-top: 5px
+
+    .buttons
+      font-size: 25px
+      padding: 5px 0px 0px 30px
+      display: flex
+      justify-content: space-between
+      i
+        cursor: pointer
+      i:hover
+        color: $yellow
+      i:active
+        position: relative
+        top: 2px
+        color: $darkyellow
+
+      .leftside
+        display: flex
+        justify-content: space-between
+        i, .trackTitle
+          margin-bottom: 10px
+          margin-right: 20px
+        .trackTitle
+          display: inline-block
+          line-height: 2em
+          font-size: 20px
+          margin-left: 20px
+          overflow-x: hidden
+
+      .rightside
+        display: flex
+        justify-content: space-between
+        i
+          margin-bottom: 10px
+          margin-left: 30px
+        .trackTime
+          display: inline-block
+          line-height: 2.2em
+          font-size: 18px
+          overflow-x: hidden
+      .trackListToggle
+        background-color: darken($bgcolorblue, 50%)
+        right: 0px
+        font-size: 35px
+        padding: 5px 30px 25px 20px
+        margin-top: -10px
+        margin-bottom: -10px
+        width: 15px
+        height: 30px
+
+    #defaultBar
+      width: 100%
+      position: relative
+      height: 5px
+      background-color: rgba(#555, .8)
+      #progressBar
+        position:absolute
+        height: 5px
+        background-color: $darkyellow
+        width: 0px
+
+@media screen and (max-width: 850px)
+  .player
+    width: 100%
+    .trackTitle
+      display: block
+      width: 140px
+      height: 40px
+      overflow: hidden
+      font-size: 14px
+    .trackTime
+      display: block
+      width: 100px
+      height: 40px
+      overflow: hidden
+      font-size: 12px
+    .i
+      display: block
+      width: 40px
+      height: 40px
+      padding: 0 5px
+    .rightside
+      display: inline-block
+      padding-right: 30px
+
+
+#buylist
+  display: block
+  position: fixed
+  z-index: 1600
+  width: 100px
+  right: 0
+  top: 105px
+  padding: 10px 10px 20px 20px
+  overflow: hidden
+  height: 235px
+  li
+    line-height: 3.5em
+    padding-bottom: 7px
+    list-style: none
+    button
+      position: relative
+      text-align: right
+      right: 10px
+      font-size: 12px
+      height: 35px
+      margin-top: 8px
+
+#playlist
+  display: inline-block
+  width: 100%
+  left: 0
+  top: 0
+  background-color: rgba($bgcolorblue, .8)
+  padding: 10px 20px 20px 0px
+  overflow: hidden
+  height: 235px
+
+  li
+    line-height: 3.5em
+    padding-left: 30px
+    border-bottom: 0.5px solid #555
+    display: flex
+    justify-content: space-between
+    overflow: hidden
+    a
+      display: inline-block
+      color: white
+      font-weight: 400
+      text-decoration: none
+    span
+      margin-right: 35px
+
+  .current-song
+    a
+      color: $darkyellow

@@ -4,6 +4,7 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"]
   display: block
+  clear: both
   height: 38px
   padding: 0 30px
   color: #fff
@@ -15,7 +16,7 @@ input[type="button"]
   text-transform: uppercase
   text-decoration: none
   white-space: nowrap
-  background-color: rgba(255, 162, 0, 1)
+  background-color: $darkyellow
   border-radius: 19px
   border: none
   cursor: pointer
@@ -25,4 +26,4 @@ input[type="button"]
   &:focus
     outline: none
     color: #fff
-    background-color: lighten($yellow, 1%)
+    background-color: darken($yellow, 40%)

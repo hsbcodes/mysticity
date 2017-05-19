@@ -11,33 +11,27 @@
     <a href="https://www.facebook.com/tessilck/" target="_blank"> <i class="ion-social-android-outline"></i></a>
   </div>
 
-  <form id="contact-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left d3" action="contact.php" method="post" novalidate>
+  <form id="contact-form" action="contact.php" method="post" novalidate>
 
     <div class="form-group">
-      <label class="control-label" for="contact-name">What's your name?</label>
-      <div class="controls">
-      <input id="contact-name" name="contactName" placeholder="What's your name?" class="form-control requiredField" type="text" data-error-empty="Please enter your name">
-      <i class="ion-ios-person-outline"></i>
-      </div>
-  
-      <label class="control-label" for="contact-mail">Where can I email you back?</label>
-      <div class=" controls">
-      <input id="contact-mail" name="email" placeholder="Where can I email you back?" class="form-control requiredField" type="email" data-error-empty="Please enter your email" data-error-invalid="Invalid email address">
-      <i class="ion-ios-email-outline"></i>
-      </div>
+      <label><span>What's your name?</span>
+        <input id="contact-name" name="contactName" type="text" data-error-empty="Please enter your name">
+      </label>
+      <label><span>Where can I email you back?</span>
+        <input id="contact-mail" name="email" type="email" data-error-empty="Please enter your email" data-error-invalid="Invalid email address">
+      </label>
     </div><!-- End email input -->
 
     <div class="form-group">
-      <label class="control-label" for="contact-message">What's on your mind?</label>
-      <div class="controls">
-        <textarea id="contact-message" name="comments"  placeholder="What's on your mind?" class="form-control requiredField" rows="6" data-error-empty="Please enter your message"></textarea>
-        <i class="ion-chatbubble"></i>
-      </div>
+      <label><span>What's on your mind?</span>
+        <textarea id="contact-message" name="comments" data-error-empty="Please enter your message"></textarea>
+      </label>
     </div><!-- End textarea -->
 
-    <p><button name="submit" type="submit" class="btn btn-color2 btn-block" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Sent"><i class="fa fa-paper-plane"></i>Send Message</button></p>
+    <div class="submit-wrap">
+    <button name="submit" type="submit" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Sent"></i>Send</button>
     <input type="hidden" name="submitted" id="submitted" value="true" />
-
+    </div>
   </form><!-- End contact-form -->
 
 
