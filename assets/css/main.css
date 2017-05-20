@@ -1517,20 +1517,30 @@ pre {
     -ms-transform: scale(1.2);
     transform: scale(1.2); }
 
-#music .music-container, #music .album-container {
+#music .music-container {
   max-width: 960px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
   margin: 0px auto;
   padding: 0 20px; }
-  #music .music-container::after, #music .album-container::after {
+  #music .music-container::after {
     clear: both;
     content: "";
     display: table; }
-  #music .music-container img, #music .album-container img {
+  #music .music-container img {
     max-width: 100%; }
+
+#music .album-container {
+  max-width: 960px;
+  margin: 0 auto; }
 
 #music .album {
   display: inline-block;
-  margin: 0px 30px; }
+  margin: 0px 20px; }
   #music .album h4 {
     padding: 10px 0 40px 0; }
   @media screen and (max-width: 1300px) {
@@ -1604,33 +1614,61 @@ pre {
       #music .album .music-unit:hover .music-overlay strong {
         font-size: 25px; }
 
-#music .cover-wrap {
-  display: block;
-  margin: 0 auto; }
-  #music .cover-wrap .album-unit {
-    display: block;
-    width: 250px;
-    height: 250px;
-    margin: auto;
-    position: relative;
-    overflow: hidden;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover; }
-  #music .cover-wrap .buynow {
-    margin: 20px auto;
+.album-load {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  max-width: 960px; }
+  .album-load .cover-wrap {
+    display: inline-block;
+    margin-left: 80px; }
+    .album-load .cover-wrap .album-unit {
+      display: block;
+      width: 250px;
+      height: 250px;
+      overflow: hidden;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .album-load .cover-wrap .buynow {
+      margin: 20px auto;
+      display: inline-block; }
+  .album-load .track-wrap {
     display: inline-block; }
+  .album-load .track-unit {
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.6em;
+    letter-spacing: .03em;
+    color: white; }
+    .album-load .track-unit ol {
+      margin-left: 20px; }
 
-#music .track-unit {
-  text-align: left;
-  width: 60%;
-  margin: 5px auto;
-  font-size: 18px;
-  line-height: 1.6em;
-  letter-spacing: .03em;
-  color: white; }
-  #music .track-unit ol {
-    margin-left: 20px; }
+@media screen and (max-width: 650px) {
+  .album {
+    display: block;
+    margin: 0 auto; }
+  .album-load {
+    display: block; }
+    .album-load .cover-wrap {
+      display: block;
+      margin: 0 auto; }
+      .album-load .cover-wrap .album-unit {
+        display: block;
+        width: 250px;
+        height: 250px;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover; }
+      .album-load .cover-wrap .buynow {
+        margin: 20px auto;
+        display: inline-block; } }
 
 .section-bio {
   overflow-x: hidden; }
