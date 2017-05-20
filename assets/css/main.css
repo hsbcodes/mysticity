@@ -454,9 +454,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400; }
 
 .medium, h5 {
-  font-size: 12px;
+  font-size: 18px;
   line-height: 2.3em;
-  color: #eeeeee;
+  color: #bbbbbb;
   font-weight: 400; }
 
 .small, small {
@@ -938,7 +938,7 @@ footer {
       font-size: 12px; } }
 
 .modal-container, .gallery-container {
-  z-index: 999;
+  z-index: 4000;
   position: fixed;
   top: 0;
   left: 20%;
@@ -949,7 +949,6 @@ footer {
   pointer-events: none;
   transition: opacity 0.2s; }
   .modal-container .modal, .modal-container .gallery, .gallery-container .modal, .gallery-container .gallery {
-    z-index: 1000;
     position: relative;
     left: 50%;
     top: 50%;
@@ -965,7 +964,6 @@ footer {
       -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
       justify-content: space-around;
-      z-index: 1010;
       display: none;
       -webkit-transition: 1600ms;
       -moz-transition: 1600ms;
@@ -1608,42 +1606,31 @@ pre {
 
 #music .cover-wrap {
   display: block;
-  float: left;
-  margin: 0 20px 20px 15%; }
+  margin: 0 auto; }
   #music .cover-wrap .album-unit {
     display: block;
-    clear: right;
-    width: 200px;
-    height: 200px;
-    overflow-x: hidden;
-    margin-bottom: 20px;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover; }
   #music .cover-wrap .buynow {
+    margin: 20px auto;
     display: inline-block; }
 
 #music .track-unit {
-  display: block;
-  width: 60%;
   text-align: left;
-  width: auto;
+  width: 60%;
+  margin: 5px auto;
   font-size: 18px;
   line-height: 1.6em;
   letter-spacing: .03em;
   color: white; }
   #music .track-unit ol {
-    display: inline-block;
-    margin: 10px 0 0 20px; }
-  @media screen and (max-width: 520px) {
-    #music .track-unit {
-      clear: both;
-      width: 100%; }
-      #music .track-unit h4, #music .track-unit h5 {
-        width: 70%;
-        margin-left: 30px; }
-      #music .track-unit ol {
-        margin-left: 30px; } }
+    margin-left: 20px; }
 
 .section-bio {
   overflow-x: hidden; }
@@ -1681,7 +1668,7 @@ pre {
   #band .band-container .member, #band .bio-container .member {
     display: inline-block;
     margin: 0px 25px; }
-    #band .band-container .member h4, #band .bio-container .member h4 {
+    #band .band-container .member h5, #band .bio-container .member h5 {
       padding: 10px 0 30px 0; }
     @media screen and (max-width: 500px) {
       #band .band-container .member, #band .bio-container .member {
@@ -1790,7 +1777,7 @@ pre {
         -webkit-transform: scale(1.02);
         -ms-transform: scale(1.02);
         transform: scale(1.02); }
-      @media screen and (max-width: 760px) {
+      @media screen and (max-width: 850px) {
         #gallery .thumb-container .thumb-unit {
           width: 50%;
           padding-top: 26%; } }
