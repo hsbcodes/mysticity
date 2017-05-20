@@ -7,6 +7,23 @@ $(function(){
 	galleryStuff();
 });
 
+//mobile nav
+$(function(){
+	$('#toggle').click(function(){
+		$(this).toggleClass("on");
+		if($(this).next().css('display')=='block'){
+			$(this).next().slideUp();
+		}else{
+			$(this).next().slideDown();
+		}
+    return false;
+	});
+	$('ul li').click(function(){
+		$('#toggle').removeClass("on");
+		$(this).parent().slideUp();
+	});
+});
+
 //smooth scrolling
 function smoothScroll(duration) {
 	$('a[href^="#"]').on('click', function(event) {
