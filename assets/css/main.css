@@ -893,6 +893,7 @@ footer {
     background-color: black;
     border-bottom: 1px solid #555; }
     .mobile-nav ul {
+      width: 30%;
       top: 55px;
       padding-top: 15px;
       padding-bottom: 15px;
@@ -911,22 +912,25 @@ footer {
 @media screen and (max-width: 580px) {
   .mobile-nav {
     width: 20%;
-    height: 99px;
+    height: 98px;
     padding-top: 33px;
-    padding-left: 7%; } }
+    padding-left: 7%; }
+    .mobile-nav ul {
+      width: 40%;
+      top: 98px;
+      padding-bottom: 10px; } }
 
 @media screen and (max-width: 320px) {
   .sidenav {
     display: none; }
   .mobile-nav {
     width: 20%;
-    height: 99px;
+    height: 98px;
     padding-top: 33px;
     padding-left: 10px; }
-    .mobile-nav span {
-      font-size: 12px; }
     .mobile-nav ul {
-      top: 37px;
+      width: 100%;
+      top: 98px;
       padding-bottom: 10px; }
     .mobile-nav li {
       padding: 5px 0 5px 20px; }
