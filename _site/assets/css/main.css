@@ -992,7 +992,7 @@ footer {
   .gallery {
     width: 400px; } }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 850px) {
   .modal-container,
   .gallery-container {
     left: 0%;
@@ -1471,7 +1471,7 @@ pre {
   position: relative;
   min-height: 400px;
   text-align: center; }
-  @media screen and (max-width: 740px) {
+  @media screen and (max-width: 850px) {
     #landing {
       width: 100%; } }
   #landing .splash {

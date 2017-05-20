@@ -11,28 +11,30 @@
     <a href="https://www.facebook.com/tessilck/" target="_blank"> <i class="ion-social-android-outline"></i></a>
   </div>
 
-  <form id="contact-form" action="contact.php" method="post" novalidate>
+  <form id="contact-form" action="https://formspree.io/hranush@gmail.com"
+        method="POST">
+        <div class="form-group">
+          <label><span>What's your name?</span>
+            <input id="contact-name" name="contactName" type="text" >
+          </label>
+          <label><span>Where can I email you back?</span>
+            <input id="contact-mail" name="email" type="email" >
+          </label>
+        </div><!-- End email input -->
 
-    <div class="form-group">
-      <label><span>What's your name?</span>
-        <input id="contact-name" name="contactName" type="text" data-error-empty="Please enter your name">
-      </label>
-      <label><span>Where can I email you back?</span>
-        <input id="contact-mail" name="email" type="email" data-error-empty="Please enter your email" data-error-invalid="Invalid email address">
-      </label>
-    </div><!-- End email input -->
+        <div class="form-group">
+          <label><span>What's on your mind?</span>
+            <textarea id="contact-message" name="comments"></textarea>
+          </label>
+        </div><!-- End textarea -->
+        <div class="submit-wrap">
+        <button name="submit" type="submit">Send</button>
 
-    <div class="form-group">
-      <label><span>What's on your mind?</span>
-        <textarea id="contact-message" name="comments" data-error-empty="Please enter your message"></textarea>
-      </label>
-    </div><!-- End textarea -->
+        </div>
 
-    <div class="submit-wrap">
-    <button name="submit" type="submit" data-error-message="Error!" data-sending-message="Sending..." data-ok-message="Message Sent"></i>Send</button>
-    <input type="hidden" name="submitted" id="submitted" value="true" />
-    </div>
-  </form><!-- End contact-form -->
+
+  </form>
+
 
 
 </div>

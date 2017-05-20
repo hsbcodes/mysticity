@@ -18,7 +18,7 @@ $(function(){
 		}
     return false;
 	});
-	$('ul li').click(function(){
+	$('.mobile-nav ul li').click(function(){
 		$('#toggle').removeClass("on");
 		$(this).parent().slideUp();
 	});

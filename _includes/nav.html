@@ -26,8 +26,9 @@
     </div>
 
     <ul>
-      <li>    <div class="logo"><a href="index.html"><img src="assets/img/{{site.data.sitecon.logo}}" alt="Tessilk"></a></div>
-</li>
+      <li>
+        <div class="logo"><a href="index.html"><img src="assets/img/{{site.data.sitecon.logo}}" alt="Tessilk"></a></div>
+      </li>
       {% for mobilenav in site.data.sitecon.menu %}
         <li><a href="{{ mobilenav.url }}"> {{ mobilenav.name }} </a></li>
       {% endfor %}
