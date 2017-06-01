@@ -26,10 +26,14 @@
     text-align: right
   nav
     ul
-      li
+
+      .nav-item
         list-style-type: none
         line-height: 3em
         text-align: center
+        .active
+          color: #ffbe12
+          font-weight: 500
         a
           display: block
           color: #ccc
@@ -38,10 +42,12 @@
           font-weight: 300
           background-color: rgba($bgcolorblue, 0)
           transition: all 300ms ease-in-out
+
           &:hover
             transform: scale(1.1)
-            color: #ffda78
+            color: #eee
             background-color: rgba($bgcolorblue, .5)
+            font-weight: 500
 
 
 
@@ -82,12 +88,10 @@
     list-style: none
     position: fixed
     text-align: center
-    background-color: rgba(0,0,0, .8)
+    background-color: rgba(0,0,0, .9)
     width: 25%
     left: 0
 
-  a
-    color: #ffffff
 
 
 
@@ -124,6 +128,7 @@ footer
 
 
 @media screen and (max-width: 850px)
+
   .sidenav
     display: none
 
@@ -138,24 +143,41 @@ footer
     border-bottom: 1px solid #555
 
     ul
-      width: 30%
+      width: 20%
+      height: 100%
       top: 55px
       padding-top: 15px
       padding-bottom: 15px
       border-bottom: 1px solid #555
-
-
-    li
-      padding: 10px 0 10px 0
       .logo
         text-align: center
         img
-          width: 60%
-          max-width: 250px
+          width: 130px
+          height: 150px
 
-    a
-      font-size: 20px
-      font-weight: 400
+    .nav-item
+      padding: 0 0 10px 0
+      overflow: hidden
+      .active
+        transform: scale(1.1)
+        color: #ffbe12
+        background-color: rgba($bgcolorblue, .5)
+        font-weight: 500
+      a
+        display: block
+        color: #ccc
+        font-size: 1.5em
+        background-color: rgba($bgcolorblue, .0)
+        transition: all 300ms ease-in-out
+        padding: 7px 0
+        font-weight: 300
+
+        &:hover
+          transform: scale(1.1)
+          color: #eee
+          background-color: rgba($bgcolorblue, .5)
+          font-weight: 600
+
 
 
 @media screen and (max-width: 580px)
@@ -170,9 +192,6 @@ footer
       padding-bottom: 10px
 
 @media screen and (max-width: 320px)
-  .sidenav
-    display: none
-
   .mobile-nav
     width: 20%
     height: 98px
@@ -186,6 +205,3 @@ footer
 
     li
       padding: 5px 0 5px 20px
-
-    a
-      font-size: 12px

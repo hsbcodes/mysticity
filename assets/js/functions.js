@@ -24,6 +24,16 @@ $(function(){
 	});
 });
 
+//making the nav items active
+$(document).ready(function() {
+				$("#nav .nav-item a").click(function(){
+						$("#nav .nav-item a").removeClass("active");
+						$(this).addClass("active");
+
+				});
+		});
+
+
 //smooth scrolling
 function smoothScroll(duration) {
 	$('a[href^="#"]').on('click', function(event) {

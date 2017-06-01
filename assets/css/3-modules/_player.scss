@@ -24,6 +24,7 @@ $apBG: darken($bgcolorblue, 10%);
 $plBG: #000;
 $plCurrentBG: $primaryColor;
 $plColorIcon: $primaryColor;
+$darkPrimary: darken($primaryColor, 10%);
 $plCurrentColor: #fff;
 $plHoverColor: #242933;
 $iconColor: #999;
@@ -118,7 +119,7 @@ $plZ: 777;
 }
 .progress-container {
   position: relative;
-  padding: 7px 0 0 0;
+  padding: 7px 0;
   margin-top: 20px;
   overflow: hidden;
   cursor: pointer;
@@ -129,7 +130,7 @@ $plZ: 777;
 .progress {
   height: $barSize;
   border-radius: $barSize;
-  background: $barBG;
+  background: darken($barBG, 40%);
 }
 .progress__bar,
 .progress__preload {
@@ -166,7 +167,7 @@ $plZ: 777;
   }
 }
 .progress__preload {
-  background: darken($barBG, 10%);
+  background: darken($barBG, 60%);
   z-index: 0;
 }
 
@@ -177,19 +178,16 @@ $plZ: 777;
   padding: 0;
   border: 0;
   outline: 0;
+  fill: #333;
   background: transparent;
-
   position: relative;
   display: block;
   height: $apHeight;
   text-align: center;
   cursor: pointer;
-  transition: background .3s ease;
-  &:active {
-    background: rgba(0,0,0,.1);
-  }
+  transition: .3s ease;
   &:hover {
-    opacity: 1;
+    fill: $darkPrimary;
   }
 }
 .icon-play > path {
@@ -291,7 +289,7 @@ $plZ: 777;
     min-width: 250px;
   }
   .ap, .ap__inner {
-    height: auto;
+    height: 98px;
   }
   .ap__inner {
     flex-wrap: wrap;

@@ -55,10 +55,10 @@ var AudioPlayer = (function() {
   settings = {
     volume        : 0.1,
     changeDocTitle: true,
-    confirmClose  : true,
-    autoPlay      : true,
+    confirmClose  : false,
+    autoPlay      : false,
     buffered      : true,
-    notification  : true,
+    notification  : false,
     playList      : []
   };
 

@@ -3,9 +3,9 @@
   <div class="sidenav">
     <div class="logo"><a href="index.html"><img src="assets/img/{{site.data.sitecon.logo}}" alt="Tessilk"></a></div>
     <nav>
-      <ul>
+      <ul id="nav">
         {% for navitem in site.data.sitecon.menu %}
-          <li><a href="{{ navitem.url }}"> {{ navitem.name }} </a></li>
+          <li class="nav-item"><a href="{{ navitem.url }}"> {{ navitem.name }} </a></li>
         {% endfor %}
       </ul>
     </nav>
@@ -25,12 +25,12 @@
       <div class="three"></div>
     </div>
 
-    <ul>
+    <ul id="nav">
       <li>
         <div class="logo"><a href="index.html"><img src="assets/img/{{site.data.sitecon.logo}}" alt="Tessilk"></a></div>
       </li>
       {% for mobilenav in site.data.sitecon.menu %}
-        <li><a href="{{ mobilenav.url }}"> {{ mobilenav.name }} </a></li>
+        <li class="nav-item" ><a href="{{ mobilenav.url }}"> {{ mobilenav.name }} </a></li>
       {% endfor %}
     </ul>
   </div>
