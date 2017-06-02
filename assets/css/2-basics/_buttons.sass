@@ -16,7 +16,7 @@ input[type="button"]
   text-transform: uppercase
   text-decoration: none
   white-space: nowrap
-  background-color: $darkyellow
+  background-color: darken($darkyellow, 10%)
   border-radius: 19px
   border: none
   cursor: pointer
@@ -26,4 +26,32 @@ input[type="button"]
   &:focus
     outline: none
     color: #fff
-    background-color: darken($yellow, 40%)
+    background-color: $darkyellow
+
+
+
+.info-button
+  display: block
+  clear: both
+  height: 38px
+  padding: 0 30px
+  color: #fff
+  text-align: center
+  font-size: 16px
+  font-weight: 400
+  line-height: 38px
+  letter-spacing: .1rem
+  text-transform: uppercase
+  text-decoration: none
+  white-space: nowrap
+  background-color: darken($gray, 10%)
+  border-radius: 19px
+  border: none
+  cursor: pointer
+
+  &:hover,
+  &:active,
+  &:focus
+    outline: none
+    color: #fff
+    background-color: $gray

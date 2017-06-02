@@ -22,13 +22,10 @@
     #music, #band, #gallery, #contact {
       width: 100%; } }
 
-#band .band-container .band-thumb-unit, #band .bio-container .band-thumb-unit, #band .band-container .band-unit, #band .bio-container .band-unit {
+#music .music-container .album .music-unit, #band .band-container .band-thumb-unit, #band .bio-container .band-thumb-unit, #band .band-container .band-unit, #band .bio-container .band-unit {
   display: block;
-  width: 250px;
-  height: 250px;
   margin: auto;
   position: relative;
-  border-radius: 50%;
   overflow: hidden;
   background-position: center center;
   background-repeat: no-repeat;
@@ -45,7 +42,9 @@
   text-align: center;
   cursor: pointer;
   z-index: 1010;
+  -webkit-transition: -webkit-transform 100ms ease-in-out;
   transition: -webkit-transform 100ms ease-in-out;
+  -o-transition: transform 100ms ease-in-out;
   transition: transform 100ms ease-in-out;
   transition: transform 100ms ease-in-out, -webkit-transform 100ms ease-in-out; }
   .icon-back:hover {
@@ -67,7 +66,9 @@
   text-align: center;
   cursor: pointer;
   z-index: 1030;
+  -webkit-transition: -webkit-transform 100ms ease-in-out;
   transition: -webkit-transform 100ms ease-in-out;
+  -o-transition: transform 100ms ease-in-out;
   transition: transform 100ms ease-in-out;
   transition: transform 100ms ease-in-out, -webkit-transform 100ms ease-in-out; }
   .modal-container .modal .icon-next:hover, .modal-container .gallery .icon-next:hover, .gallery-container .modal .icon-next:hover, .gallery-container .gallery .icon-next:hover {
@@ -99,7 +100,9 @@
   text-align: center;
   cursor: pointer;
   z-index: 1030;
+  -webkit-transition: -webkit-transform 100ms ease-in-out;
   transition: -webkit-transform 100ms ease-in-out;
+  -o-transition: transform 100ms ease-in-out;
   transition: transform 100ms ease-in-out;
   transition: transform 100ms ease-in-out, -webkit-transform 100ms ease-in-out; }
   .modal-container .modal .icon-prev:hover, .modal-container .gallery .icon-prev:hover, .gallery-container .modal .icon-prev:hover, .gallery-container .gallery .icon-prev:hover {
@@ -131,7 +134,9 @@
   text-align: center;
   cursor: pointer;
   z-index: 1010;
+  -webkit-transition: -webkit-transform 100ms ease-in-out;
   transition: -webkit-transform 100ms ease-in-out;
+  -o-transition: transform 100ms ease-in-out;
   transition: transform 100ms ease-in-out;
   transition: transform 100ms ease-in-out, -webkit-transform 100ms ease-in-out; }
   .modal-container .modal .close-icon:hover, .modal-container .gallery .close-icon:hover, .gallery-container .modal .close-icon:hover, .gallery-container .gallery .close-icon:hover {
@@ -240,6 +245,7 @@ svg:not(:root) {
 
 hr {
   -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
 
@@ -290,6 +296,7 @@ input {
 
 input[type="checkbox"],
 input[type="radio"] {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0; }
 
@@ -369,9 +376,11 @@ th {
   0%,
   80%,
   100% {
+    -webkit-box-shadow: 0 0;
     box-shadow: 0 0;
     height: 4em; }
   40% {
+    -webkit-box-shadow: 0 -2em;
     box-shadow: 0 -2em;
     height: 5em; } }
 
@@ -379,9 +388,11 @@ th {
   0%,
   80%,
   100% {
+    -webkit-box-shadow: 0 0;
     box-shadow: 0 0;
     height: 4em; }
   40% {
+    -webkit-box-shadow: 0 -2em;
     box-shadow: 0 -2em;
     height: 5em; } }
 
@@ -499,7 +510,7 @@ input[type="button"] {
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
-  background-color: #ffbe12;
+  background-color: #dea100;
   border-radius: 19px;
   border: none;
   cursor: pointer; }
@@ -518,7 +529,30 @@ input[type="button"] {
   input[type="button"]:focus {
     outline: none;
     color: #fff;
-    background-color: #ab7c00; }
+    background-color: #ffbe12; }
+
+.info-button {
+  display: block;
+  clear: both;
+  height: 38px;
+  padding: 0 30px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #5e5e5e;
+  border-radius: 19px;
+  border: none;
+  cursor: pointer; }
+  .info-button:hover, .info-button:active, .info-button:focus {
+    outline: none;
+    color: #fff;
+    background-color: #777; }
 
 .cb-slideshow,
 .cb-slideshow:after {
@@ -792,6 +826,8 @@ input[type="button"] {
       line-height: 2em;
       font-weight: 300;
       background-color: rgba(36, 41, 51, 0);
+      -webkit-transition: all 300ms ease-in-out;
+      -o-transition: all 300ms ease-in-out;
       transition: all 300ms ease-in-out; }
       .sidenav nav ul .nav-item a:hover {
         -webkit-transform: scale(1.1);
@@ -814,6 +850,8 @@ input[type="button"] {
       height: 3px;
       background: white;
       margin: 5px auto;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
       transition: all 0.3s;
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden; }
@@ -921,6 +959,8 @@ footer {
         color: #ccc;
         font-size: 1.5em;
         background-color: rgba(36, 41, 51, 0);
+        -webkit-transition: all 300ms ease-in-out;
+        -o-transition: all 300ms ease-in-out;
         transition: all 300ms ease-in-out;
         padding: 7px 0;
         font-weight: 300; }
@@ -966,6 +1006,8 @@ footer {
   background-color: black;
   opacity: 0;
   pointer-events: none;
+  -webkit-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
   transition: opacity 0.2s; }
   .modal-container .modal, .modal-container .gallery, .gallery-container .modal, .gallery-container .gallery {
     position: relative;
@@ -975,6 +1017,8 @@ footer {
     background-color: black;
     margin-top: -220px;
     margin-left: -260px;
+    -webkit-transition: margin 0.2s;
+    -o-transition: margin 0.2s;
     transition: margin 0.2s;
     text-align: center; }
     .modal-container .modal .gallery-unit, .modal-container .gallery .gallery-unit, .gallery-container .modal .gallery-unit, .gallery-container .gallery .gallery-unit {
@@ -986,6 +1030,7 @@ footer {
       display: none;
       -webkit-transition: 1600ms;
       -moz-transition: 1600ms;
+      -o-transition: 1600ms;
       transition: 1600ms; }
       .modal-container .modal .gallery-unit.active-gal, .modal-container .gallery .gallery-unit.active-gal, .gallery-container .modal .gallery-unit.active-gal, .gallery-container .gallery .gallery-unit.active-gal {
         display: -webkit-box;
@@ -1043,6 +1088,7 @@ footer {
 *,
 *::before,
 *::after {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 pre, code {
@@ -1072,10 +1118,12 @@ pre {
   user-select: none;
   border-bottom: 1px solid #555;
   background: #0f1115;
+  -webkit-box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
   box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
-  z-index: 999; }
+  z-index: 1500; }
 
 .ap__inner {
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1083,21 +1131,26 @@ pre {
   margin: 7px 0 0 0; }
 
 .ap__item {
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center; }
 
 .ap__item--playback > .ap__controls,
 .ap__item--settings > .ap__controls {
+  -webkit-box-flex: 0;
   -webkit-flex: 0 25%;
   -ms-flex: 0 25%;
   flex: 0 25%; }
@@ -1123,6 +1176,7 @@ pre {
     transform: scale(1); } }
 
 .ap__item--track {
+  -webkit-box-flex: 1;
   -webkit-flex: 1 40%;
   -ms-flex: 1 40%;
   flex: 1 40%;
@@ -1143,6 +1197,7 @@ pre {
   padding-right: 80px;
   text-align: left;
   white-space: nowrap;
+  -o-text-overflow: ellipsis;
   text-overflow: ellipsis; }
 
 .track__time {
@@ -1185,6 +1240,8 @@ pre {
     border-radius: 6px;
     background: #ffbe12;
     opacity: 0;
+    -webkit-transition: opacity .3s ease;
+    -o-transition: opacity .3s ease;
     transition: opacity .3s ease; }
 
 .progress__bar--active:after {
@@ -1209,12 +1266,16 @@ pre {
   height: 55px;
   text-align: center;
   cursor: pointer;
+  -webkit-transition: .3s ease;
+  -o-transition: .3s ease;
   transition: .3s ease; }
   .ap__controls:hover,
   .ap button:hover {
     fill: #dea100; }
 
 .icon-play > path {
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
   transition: all .3s ease; }
 
 .is-playing .icon-play {
@@ -1237,11 +1298,13 @@ pre {
   -webkit-transform: translateY(-20px);
   -ms-transform: translateY(-20px);
   transform: translateY(-20px);
+  -webkit-transition: all 0.3s cubic-bezier(0.17, 0.72, 0.26, 1.23);
+  -o-transition: all 0.3s cubic-bezier(0.17, 0.72, 0.26, 1.23);
   transition: all 0.3s cubic-bezier(0.17, 0.72, 0.26, 1.23);
   background: #0f1115;
   border: 1px solid #ccc;
   border-radius: 1px;
-  z-index: 888; }
+  z-index: 1300; }
   .volume::before, .volume::after {
     content: '';
     position: absolute;
@@ -1297,6 +1360,7 @@ pre {
 
 @media (max-width: 1024px) {
   .ap__item > .ap__controls {
+    -webkit-box-flex: 1;
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1; } }
@@ -1313,17 +1377,21 @@ pre {
   .ap__item--track {
     margin-bottom: 0px;
     padding: 0 20px;
+    -webkit-box-ordinal-group: 2;
     -webkit-order: 1;
     -ms-flex-order: 1;
     order: 1;
+    -webkit-box-flex: 1;
     -webkit-flex: 1 1 100%;
     -ms-flex: 1 1 100%;
     flex: 1 1 100%; }
   .ap__item--playback,
   .ap__item--settings {
+    -webkit-box-flex: 1;
     -webkit-flex: 1 1 50%;
     -ms-flex: 1 1 50%;
     flex: 1 1 50%;
+    -webkit-box-ordinal-group: 3;
     -webkit-order: 2;
     -ms-flex-order: 2;
     order: 2; } }
@@ -1342,7 +1410,7 @@ pre {
   font-family: inherit;
   font-size: 14px;
   background: #000;
-  z-index: 777; }
+  z-index: 1200; }
 
 @media (max-width: 850px) {
   .pl-container {
@@ -1355,9 +1423,11 @@ pre {
   padding: 100px 10px 50px 10px; }
 
 .pl-list {
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1374,6 +1444,7 @@ pre {
 
 .pl-list__track,
 .pl-list__remove {
+  -webkit-box-flex: 0;
   -webkit-flex: 0 50px;
   -ms-flex: 0 50px;
   flex: 0 50px;
@@ -1393,7 +1464,9 @@ pre {
   cursor: pointer;
   text-align: left;
   white-space: nowrap;
+  -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
+  -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1; }
@@ -1442,15 +1515,18 @@ pre {
     height: 3px; } }
 
 .eq {
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   width: 20px;
   height: 20px;
   margin: 0 auto;
+  -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: end;
   -webkit-align-items: flex-end;
   -ms-flex-align: end;
   align-items: flex-end; }
@@ -1519,15 +1595,18 @@ pre {
   left: 0%;
   -webkit-transition: all 500ms;
   -moz-transition: all 500ms;
+  -o-transition: all 500ms;
   transition: all 500ms; }
 
 .music-wrap, .album-wrap {
   width: 50%;
   float: left;
-  padding-bottom: 30px; }
+  padding: 30px; }
 
 .icon-back {
-  margin-top: -20px;
+  top: 20px;
+  -webkit-transition: all 100ms ease-in-out;
+  -o-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out; }
   .icon-back:hover {
     -webkit-transform: scale(1.2);
@@ -1536,13 +1615,7 @@ pre {
 
 #music .music-container {
   max-width: 960px;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  margin: 0px auto;
+  margin: 0 auto;
   padding: 0 20px; }
   #music .music-container::after {
     clear: both;
@@ -1550,88 +1623,85 @@ pre {
     display: table; }
   #music .music-container img {
     max-width: 100%; }
-
-#music .album-container {
-  max-width: 960px;
-  margin: 0 auto; }
-
-#music .album {
-  display: inline-block;
-  margin: 0px 20px; }
-  #music .album h4 {
-    padding: 10px 0 40px 0; }
-  @media screen and (max-width: 1300px) {
-    #music .album {
-      margin: 0px 10px; }
-      #music .album h4 {
-        width: 200px;
-        font-size: 16px;
-        text-align: center;
-        margin: 0 auto 10px auto; } }
-  #music .album .music-unit {
+  #music .music-container .album {
     display: inline-block;
-    width: 400px;
-    height: 400px;
-    margin: auto;
-    position: relative;
-    overflow: hidden;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    transition: 0.5s; }
-    #music .album .music-unit:hover {
-      -webkit-transform: scale(1.03);
-      -ms-transform: scale(1.03);
-      transform: scale(1.03); }
+    margin: 0px 20px; }
+    #music .music-container .album h4 {
+      padding: 10px 0 40px 0; }
     @media screen and (max-width: 1300px) {
-      #music .album .music-unit {
-        width: 300px;
-        height: 300px; } }
-    #music .album .music-unit .music-overlay {
-      position: absolute;
-      top: 0%;
-      right: 0px;
-      left: 0px;
-      height: 100%;
-      background: rgba(36, 41, 51, 0.8);
-      text-align: center;
-      cursor: pointer;
-      opacity: 0;
-      -webkit-transition: all 0.15s ease-out 0s;
-      -moz-transition: all 0.15s ease-out 0s;
-      transition: all 0.15s ease-out 0s; }
-      #music .album .music-unit .music-overlay strong {
-        display: inline-block;
-        margin: 45% auto 20% auto;
+      #music .music-container .album {
+        margin: 0px 10px; }
+        #music .music-container .album h4 {
+          width: 200px;
+          font-size: 16px;
+          text-align: center;
+          margin: 0 auto 10px auto; } }
+    #music .music-container .album .music-unit {
+      width: 400px;
+      height: 400px;
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s; }
+      #music .music-container .album .music-unit:hover {
+        -webkit-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+        transform: scale(1.03); }
+      @media screen and (max-width: 1300px) {
+        #music .music-container .album .music-unit {
+          width: 300px;
+          height: 300px; } }
+      #music .music-container .album .music-unit .music-overlay {
+        position: absolute;
+        top: 0%;
+        right: 0px;
+        left: 0px;
+        height: 100%;
+        background: rgba(36, 41, 51, 0.8);
+        text-align: center;
         cursor: pointer;
-        color: white;
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 1.2em;
+        opacity: 0;
         -webkit-transition: all 0.15s ease-out 0s;
         -moz-transition: all 0.15s ease-out 0s;
-        transition: all 0.15s ease-out 0s; }
-      #music .album .music-unit .music-overlay .buynow-overlay {
-        display: block;
-        clear: both;
-        width: 150px;
-        margin: 0px 125px; }
-        @media screen and (max-width: 1200px) {
-          #music .album .music-unit .music-overlay .buynow-overlay {
-            margin: 0px 80px; } }
-    #music .album .music-unit:hover .music-overlay {
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      bottom: 0px;
-      left: 0px;
-      opacity: 1; }
-      #music .album .music-unit:hover .music-overlay strong {
-        font-size: 25px; }
+        -o-transition: all 0.15s ease-out 0s;
+        transition: all 0.15s ease-out 0s;
+        display: -webkit-box;
+        display: -moz-box;
+        display: box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        box-align: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        -o-align-items: center;
+        align-items: center;
+        -ms-flex-align: center;
+        -webkit-box-pack: distribute;
+        -moz-box-pack: distribute;
+        box-pack: distribute;
+        -webkit-justify-content: space-around;
+        -moz-justify-content: space-around;
+        -ms-justify-content: space-around;
+        -o-justify-content: space-around;
+        justify-content: space-around;
+        -ms-flex-pack: distribute; }
+      #music .music-container .album .music-unit:hover .music-overlay {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 1; }
+        #music .music-container .album .music-unit:hover .music-overlay strong {
+          font-size: 25px; }
 
 .album-load {
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1696,6 +1766,7 @@ pre {
   left: 0%;
   -webkit-transition: all 500ms;
   -moz-transition: all 500ms;
+  -o-transition: all 500ms;
   transition: all 500ms; }
 
 .band-wrap, .bio-wrap {
@@ -1704,6 +1775,8 @@ pre {
 
 .icon-back {
   top: 20px;
+  -webkit-transition: all 100ms ease-in-out;
+  -o-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out; }
   .icon-back:hover {
     -webkit-transform: scale(1.2);
@@ -1729,8 +1802,12 @@ pre {
       #band .band-container .member, #band .bio-container .member {
         margin: 0px 10px; } }
   #band .band-container .band-thumb-unit, #band .bio-container .band-thumb-unit {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s; }
     #band .band-container .band-thumb-unit:hover, #band .bio-container .band-thumb-unit:hover {
       -webkit-transform: scale(1.07);
@@ -1752,6 +1829,7 @@ pre {
       opacity: 0;
       -webkit-transition: all 0.15s ease-out 0s;
       -moz-transition: all 0.15s ease-out 0s;
+      -o-transition: all 0.15s ease-out 0s;
       transition: all 0.15s ease-out 0s;
       display: -webkit-box;
       display: -moz-box;
@@ -1787,6 +1865,7 @@ pre {
         line-height: 1.2em;
         -webkit-transition: all 0.15s ease-out 0s;
         -moz-transition: all 0.15s ease-out 0s;
+        -o-transition: all 0.15s ease-out 0s;
         transition: all 0.15s ease-out 0s; }
     #band .band-container .band-thumb-unit:hover .band-overlay, #band .bio-container .band-thumb-unit:hover .band-overlay {
       position: absolute;
@@ -1797,6 +1876,10 @@ pre {
       opacity: 1; }
       #band .band-container .band-thumb-unit:hover .band-overlay strong, #band .bio-container .band-thumb-unit:hover .band-overlay strong {
         font-size: 25px; }
+  #band .band-container .band-unit, #band .bio-container .band-unit {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%; }
   #band .band-container .bio-unit, #band .bio-container .bio-unit {
     font-size: 18px;
     line-height: 1.6em;
@@ -1827,6 +1910,7 @@ pre {
       background-size: cover;
       -webkit-transition: 0.5s;
       -moz-transition: 0.5s;
+      -o-transition: 0.5s;
       transition: 0.5s; }
       #gallery .thumb-container .thumb-unit:hover {
         -webkit-transform: scale(1.02);
@@ -1847,6 +1931,7 @@ pre {
         opacity: 0;
         -webkit-transition: all 0.15s ease-out 0s;
         -moz-transition: all 0.15s ease-out 0s;
+        -o-transition: all 0.15s ease-out 0s;
         transition: all 0.15s ease-out 0s;
         display: -webkit-box;
         display: -moz-box;
@@ -1881,7 +1966,9 @@ pre {
           font-size: 34px;
           line-height: 1.2em;
           cursor: pointer;
+          -webkit-transition: -webkit-transform 100ms ease-in-out;
           transition: -webkit-transform 100ms ease-in-out;
+          -o-transition: transform 100ms ease-in-out;
           transition: transform 100ms ease-in-out;
           transition: transform 100ms ease-in-out, -webkit-transform 100ms ease-in-out; }
           #gallery .thumb-container .thumb-unit .thumb-overlay strong:hover {
@@ -1944,6 +2031,7 @@ pre {
     cursor: pointer;
     -webkit-transition: all 0.15s ease-out 0s;
     -moz-transition: all 0.15s ease-out 0s;
+    -o-transition: all 0.15s ease-out 0s;
     transition: all 0.15s ease-out 0s; }
     #contact .social-links a:hover {
       -webkit-transform: scale(1.2);

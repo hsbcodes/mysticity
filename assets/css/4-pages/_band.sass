@@ -1,21 +1,17 @@
 .section-bio
   overflow-x: hidden
-
 .band-full
   width: 200%
   position: relative
   left: 0%
   +transition(all 500ms)
-
 .band-wrap, .bio-wrap
   width: 50%
   float: left
-
 .icon-back
   @extend %icon-back
   top: 20px
   transition: all 100ms ease-in-out
-
   &:hover
     transform: scale(1.2)
 
@@ -28,7 +24,6 @@
     +clearfix
     img
       max-width: 100%
-
     .member
       display: inline-block
       margin: 0px 25px
@@ -38,7 +33,10 @@
         margin: 0px 10px
 
     .band-thumb-unit
-      @extend %band-thumb-unit
+      width: 250px
+      height: 250px
+      border-radius: 50%
+      @extend %thumb-unit
       +transition(.5s)
       &:hover
         transform: scale(1.07)
@@ -75,7 +73,10 @@
 
 
     .band-unit
-      @extend %band-thumb-unit
+      width: 250px
+      height: 250px
+      border-radius: 50%
+      @extend %thumb-unit
     .bio-unit
         font-size: 18px
         line-height: 1.6em
