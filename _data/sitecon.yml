@@ -5,7 +5,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Mysticity
-email: email@.email.com
+email: 4mysticity@gmail.com
 description: Mysticity @tessilk is an Armenian American rock band since 1983.
 
 #MENU ITEM LIST
@@ -66,7 +66,7 @@ audio:
 - {album: 'Ambassadors of the Hidden Sun', song: ' 8. Crisis',                        file: '08Crisis.mp3',                    duration: '1:13'}
 - {album: 'Ambassadors of the Hidden Sun', song: ' 9. Visions',                       file: '09Visions.mp3',                   duration: '0:45'}
 - {album: 'Ambassadors of the Hidden Sun', song: '10. Ambassadors Departure',         file: '10AmbassadorsDeparture.mp3',      duration: '1:34'}
-- {album: 'Ambassadors of the Hidden Sun', song: '11. Miragein Bahrain',              file: '11MirageinBahrain.mp3',           duration: '0:47'}
+- {album: 'Ambassadors of the Hidden Sun', song: '11. Mirage In Bahrain',             file: '11MirageinBahrain.mp3',           duration: '0:47'}
 
 buyaudio:
 - {itunes: '$0.99'}
