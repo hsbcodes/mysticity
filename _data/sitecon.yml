@@ -19,7 +19,6 @@ menu:
 #MUSIC LIST
 music:
 - {albumname: The Ambasadors of the Hidden Sun,        cover: 'albumcover01.jpg', file: 'album-1'}
-- {albumname: Single The Ambasadors of the Hidden Sun, cover: 'albumcover01.jpg', file: 'album-2'}
 
 
 #BAND LIST
