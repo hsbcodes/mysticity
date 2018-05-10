@@ -3,7 +3,9 @@
 $(document).ready(function () {
 	$('.call-to-action').click(function () {
 		openModal();
+		$('.introVideo')[0].contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
 	});
+
   $('.thumb-unit').click(function () {
 		openGallery();
 	});
@@ -11,7 +13,9 @@ $(document).ready(function () {
 	$('.close-icon, nav').click(function () {
 		closeModal();
     closeGallery();
+		$('.introVideo')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
 	});
+
 
 
 	$(window).keypress(function (event) {

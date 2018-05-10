@@ -19,7 +19,7 @@ menu:
 #MUSIC LIST
 music:
 - {albumname: The Ambasadors of the Hidden Sun,        cover: 'albumcover01.jpg', file: 'album-1'}
-
+#- {albumname: The Ambasadors of the Hidden Sun,        cover: 'albumcover01.jpg', file: 'album-2'}
 
 #BAND LIST
 band:
@@ -46,9 +46,9 @@ gallery:
 - {thumb: 'band13.jpg'}
 - {thumb: 'band14.jpg'}
 
-youtube:
-- {thumb: 'band15.jpg', link: 'l92pxUiQ8Uk?ecver=2'}
-- {thumb: 'band16.jpg', link: '5JgCmnNFwj4?ecver=2'}
+#youtube:
+#- {thumb: 'band15.jpg', link: 'l92pxUiQ8Uk?ecver=2'}
+#- {thumb: 'band16.jpg', link: '5JgCmnNFwj4?ecver=2'}
 
 
 #Change the site default images and content here!
@@ -56,28 +56,14 @@ logo: 'tessilck_logo.png'
 
 # Audio player
 audio:
-- {album: 'Ambassadors of the Hidden Sun', song: ' 1. Revolution',                    file: '01Revolution.mp3',                duration: '0:51'}
-- {album: 'Ambassadors of the Hidden Sun', song: ' 2. Ambassadors of the Hidden Sun', file: '02AmbassadorsoftheHiddenSun.mp3', duration: '2:00'}
-- {album: 'Ambassadors of the Hidden Sun', song: ' 3. Rain',                          file: '03Rain.mp3',                      duration: '1:27'}
-- {album: 'Ambassadors of the Hidden Sun', song: ' 4. Regret',                        file: '04Regret.mp3',                    duration: '1:00'}
-- {album: 'Ambassadors of the Hidden Sun', song: ' 5. Dad is Gone',                   file: '05DadisGone.mp3',                 duration: '0:59'}
-- {album: 'Ambassadors of the Hidden Sun', song: ' 6. Home Sweet Home',               file: '06HomeSweetHome.mp3',             duration: '0:46'}
-- {album: 'Ambassadors of the Hidden Sun', song: ' 7. With and Without You',          file: '07WithandWithoutYou.mp3',         duration: '1:19'}
-- {album: 'Ambassadors of the Hidden Sun', song: ' 8. Crisis',                        file: '08Crisis.mp3',                    duration: '1:13'}
-- {album: 'Ambassadors of the Hidden Sun', song: ' 9. Visions',                       file: '09Visions.mp3',                   duration: '0:45'}
-- {album: 'Ambassadors of the Hidden Sun', song: '10. Ambassadors Departure',         file: '10AmbassadorsDeparture.mp3',      duration: '1:34'}
-- {album: 'Ambassadors of the Hidden Sun', song: '11. Mirage In Bahrain',             file: '11MirageinBahrain.mp3',           duration: '0:47'}
-
-buyaudio:
-- {itunes: '$0.99'}
-- {itunes: '$0.99'}
-- {itunes: '$0.99'}
-- {itunes: '$0.99'}
-- {itunes: '$0.99'}
-- {itunes: '$0.99'}
-- {itunes: '$0.99'}
-- {itunes: '$0.99'}
-- {itunes: '$0.99'}
-- {itunes: '$0.99'}
-- {itunes: '$0.99'}
-- {itunes: '$0.99'}
+- {album: 'Ambassadors of the Hidden Sun', song: ' 1. Revolution',                    file: '01Revolution.mp3',                duration: '0:51',   itunes: '$0.99'}
+- {album: 'Ambassadors of the Hidden Sun', song: ' 2. Ambassadors of the Hidden Sun', file: '02AmbassadorsoftheHiddenSun.mp3', duration: '2:00',   itunes: '$0.99'}
+- {album: 'Ambassadors of the Hidden Sun', song: ' 3. Rain',                          file: '03Rain.mp3',                      duration: '1:27',   itunes: '$0.99'}
+- {album: 'Ambassadors of the Hidden Sun', song: ' 4. Regret',                        file: '04Regret.mp3',                    duration: '1:00',   itunes: '$0.99'}
+- {album: 'Ambassadors of the Hidden Sun', song: ' 5. Dad is Gone',                   file: '05DadisGone.mp3',                 duration: '0:59',   itunes: '$0.99'}
+- {album: 'Ambassadors of the Hidden Sun', song: ' 6. Home Sweet Home',               file: '06HomeSweetHome.mp3',             duration: '0:46',   itunes: '$0.99'}
+- {album: 'Ambassadors of the Hidden Sun', song: ' 7. With and Without You',          file: '07WithandWithoutYou.mp3',         duration: '1:19',   itunes: '$0.99'}
+- {album: 'Ambassadors of the Hidden Sun', song: ' 8. Crisis',                        file: '08Crisis.mp3',                    duration: '1:13',   itunes: '$0.99'}
+- {album: 'Ambassadors of the Hidden Sun', song: ' 9. Visions',                       file: '09Visions.mp3',                   duration: '0:45',   itunes: '$0.99'}
+- {album: 'Ambassadors of the Hidden Sun', song: '10. Ambassadors Departure',         file: '10AmbassadorsDeparture.mp3',      duration: '1:34',   itunes: '$0.99'}
+- {album: 'Ambassadors of the Hidden Sun', song: '11. Mirage In Bahrain',             file: '11MirageinBahrain.mp3',           duration: '0:47',   itunes: '$0.99'}

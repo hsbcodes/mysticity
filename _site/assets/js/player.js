@@ -49,6 +49,10 @@ var AudioPlayer = (function() {
                 '</div>'+
               '</div>'+
               '<div class="pl-list__title">{title}</div>'+
+              '<div class="ion-android-cart"> </div>'+ '&nbsp;' +
+              '<div class="pl-list__itunes"> {itunes} </div>'+ '&nbsp;' +
+
+
 
             '</li>',
   // settings
@@ -208,7 +212,7 @@ var AudioPlayer = (function() {
     playList.push.apply(playList, addList);
     addList.forEach(function(item) {
       html.push(
-        tplList.replace('{count}', count++).replace('{title}', item.title)
+        tplList.replace('{count}', count++).replace('{title}', item.title).replace('{itunes}', item.itunes)
       );
     });
     // If exist empty message
@@ -230,7 +234,7 @@ var AudioPlayer = (function() {
 
       playList.forEach(function(item, i) {
         html.push(
-          tplList.replace('{count}', i).replace('{title}', item.title)
+          tplList.replace('{count}', i).replace('{title}', item.title).replace('{itunes}', item.itunes)
         );
       });
 
@@ -734,16 +738,16 @@ var iconImage = 'http://funkyimg.com/i/21pX5.png';
 
 AP.init({
   playList: [
-    {'title': ' 1. Revolution',                    'file': 'assets/tracks/01Revolution.mp3'},
-    {'title': ' 2. Ambassadors of the Hidden Sun', 'file': 'assets/tracks/02AmbassadorsoftheHiddenSun.mp3'},
-    {'title': ' 3. Rain',                          'file': 'assets/tracks/03Rain.mp3'},
-    {'title': ' 4. Regret',                        'file': 'assets/tracks/04Regret.mp3'},
-    {'title': ' 5. Dad is Gone',                   'file': 'assets/tracks/05DadisGone.mp3'},
-    {'title': ' 6. Home Sweet Home',               'file': 'assets/tracks/06HomeSweetHome.mp3'},
-    {'title': ' 7. With and Without You',          'file': 'assets/tracks/07WithandWithoutYou.mp3'},
-    {'title': ' 8. Crisis',                        'file': 'assets/tracks/08Crisis.mp3'},
-    {'title': ' 9. Visions',                       'file': 'assets/tracks/09Visions.mp3'},
-    {'title': '10. Ambassadors Departure',         'file': 'assets/tracks/10AmbassadorsDeparture.mp3'},
-    {'title': '11. Miragein Bahrain',              'file': 'assets/tracks/11MirageinBahrain.mp3'}
+    {'title': ' 1. Revolution',                    'file': 'assets/tracks/01Revolution.mp3',                'itunes':'$0.99'},
+    {'title': ' 2. Ambassadors of the Hidden Sun', 'file': 'assets/tracks/02AmbassadorsoftheHiddenSun.mp3', 'itunes':'$0.99'},
+    {'title': ' 3. Rain',                          'file': 'assets/tracks/03Rain.mp3',                      'itunes':'$0.99'},
+    {'title': ' 4. Regret',                        'file': 'assets/tracks/04Regret.mp3',                    'itunes':'$0.99'},
+    {'title': ' 5. Dad is Gone',                   'file': 'assets/tracks/05DadisGone.mp3',                 'itunes':'$0.99'},
+    {'title': ' 6. Home Sweet Home',               'file': 'assets/tracks/06HomeSweetHome.mp3',             'itunes':'$0.99'},
+    {'title': ' 7. With and Without You',          'file': 'assets/tracks/07WithandWithoutYou.mp3',         'itunes':'$0.99'},
+    {'title': ' 8. Crisis',                        'file': 'assets/tracks/08Crisis.mp3',                    'itunes':'$0.99'},
+    {'title': ' 9. Visions',                       'file': 'assets/tracks/09Visions.mp3',                   'itunes':'$0.99'},
+    {'title': '10. Ambassadors Departure',         'file': 'assets/tracks/10AmbassadorsDeparture.mp3',      'itunes':'$0.99'},
+    {'title': '11. Mirage In Bahrain',             'file': 'assets/tracks/11MirageinBahrain.mp3',           'itunes':'$0.99'}
   ]
 });
